@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/oxelf/desktop_cnc_compare/data/schema.json",
+  "title": "Desktop CNC machine",
+  "description": "One file per machine in data/cnc/<id>.json. The file name (without .json) is the machine id. Unknown values: null or omit. Custom keywords drive the website: x-unit (display unit), x-better (higher|lower, highlights the winner in comparisons), x-filter (override the auto-derived filter: multi|range|bool|false), x-labels (display names for raw values), x-icon (Lucide icon name for a section).",
+  "type": "object",
+  "required": ["name", "company", "stage", "last_updated"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "name": { "type": "string", "title": "Name", "x-filter": false },
+    "company": { "type": "string", "title": "Manufacturer" },
+    "price": {
+      "type": ["number", "null"], "minimum": 0, "title": "Price", "x-unit": "price", "x-better": "lower",
+      "description": "Base price of the machine as listed by the vendor, in `currency`. Prefer the EU store incl. VAT. Crowdfunding: lowest currently available pledge for the base machine (explain in notes)."
+    },
+    "currency": {
+      "type": "string", "enum": ["EUR", "USD", "GBP", "CHF", "CNY", "HKD"], "default": "EUR", "title": "Currency", "x-filter": false,
+      "description": "ISO 4217 code of `price` and all accessory prices. Defaults to EUR. The site converts to EUR with static rates for sorting and filtering."
+    },
+    "image_url": { "type": "string", "title": "Image", "x-filter": false, "description": "Absolute URL of a product image (hotlinked)." },
+    "last_updated": { "type": "string", "pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$", "title": "Last updated", "x-filter": false, "description": "Date the data was last checked, DD.MM.YYYY." },
+    "stage": {
+      "type": "string", "enum": ["available", "preorder", "crowdfunding", "announced", "discontinued"], "title": "Availability",
+      "x-labels": { "available": "Available", "preorder": "Pre-order", "crowdfunding": "Crowdfunding", "announced": "Announced", "discontinued": "Discontinued" }
+    },
+    "notes": { "type": ["string", "null"], "title": "Notes", "x-filter": false, "description": "Short free text, e.g. pricing caveats or what the base kit includes." },
+    "general": {
+      "type": "object", "title": "General", "x-icon": "box", "additionalProperties": false,
+      "properties": {
+        "machine_type": {
+          "type": ["string", "null"], "enum": ["mill", "lathe", "mill_turn", null], "title": "Machine type",
+          "x-labels": { "mill": "Mill / router", "lathe": "Lathe", "mill_turn": "Mill-turn" }
+        },
+        "axis": { "type": ["integer", "null"], "minimum": 2, "maximum": 6, "title": "Axes", "x-filter": "multi", "x-better": "higher" },
+        "working_x": { "type": ["number", "null"], "minimum": 0, "title": "Working area X", "x-unit": "mm", "x-better": "higher" },
+        "working_y": { "type": ["number", "null"], "minimum": 0, "title": "Working area Y", "x-unit": "mm", "x-better": "higher" },
+        "working_z": { "type": ["number", "null"], "minimum": 0, "title": "Working area Z", "x-unit": "mm", "x-better": "higher" },
+        "enclosed": { "type": ["boolean", "null"], "title": "Enclosure" },
+        "footprint_x": { "type": ["number", "null"], "minimum": 0, "title": "Footprint X", "x-unit": "mm", "x-better": "lower" },
+        "footprint_y": { "type": ["number", "null"], "minimum": 0, "title": "Footprint Y", "x-unit": "mm", "x-better": "lower" },
+        "footprint_z": { "type": ["number", "null"], "minimum": 0, "title": "Footprint Z", "x-unit": "mm", "x-better": "lower" },
+        "weight": { "type": ["number", "null"], "minimum": 0, "title": "Weight", "x-unit": "kg" },
+        "accuracy": { "type": ["number", "null"], "minimum": 0, "title": "Accuracy", "x-unit": "mm", "x-better": "lower" },
+        "control_system": {
+          "type": ["string", "null"], "title": "Controller",
+          "description": "Firmware/control software, lowercase snake_case, e.g. grbl, grblhal, fluidnc, linuxcnc, mach3, proprietary.",
+          "x-labels": { "grbl": "GRBL", "grblhal": "grblHAL", "fluidnc": "FluidNC", "linuxcnc": "LinuxCNC", "mach3": "Mach3", "mach4": "Mach4", "smoothieware": "Smoothieware", "proprietary": "Proprietary" }
+        },
+        "assembled": { "type": ["boolean", "null"], "title": "Ships assembled" },
+        "only_base": { "type": ["boolean", "null"], "title": "Base machine only", "description": "The listed price covers only the base machine; parts needed to operate it are sold separately." }
+      }
+    },
+    "lathe": {
+      "type": "object", "title": "Lathe", "x-icon": "cylinder", "additionalProperties": false,
+      "description": "Only for machine_type lathe or mill_turn.",
+      "properties": {
+        "swing_diameter": { "type": ["number", "null"], "minimum": 0, "title": "Swing over bed", "x-unit": "mm", "x-better": "higher" },
+        "turning_length": { "type": ["number", "null"], "minimum": 0, "title": "Max. turning length", "x-unit": "mm", "x-better": "higher" },
+        "spindle_bore": { "type": ["number", "null"], "minimum": 0, "title": "Spindle bore", "x-unit": "mm", "x-better": "higher" },
+        "live_tooling": { "type": ["boolean", "null"], "title": "Live tooling" }
+      }
+    },
+    "motion": {
+      "type": "object", "title": "Motion", "x-icon": "move-3d", "additionalProperties": false,
+      "properties": {
+        "motor_kind": {
+          "type": ["string", "null"], "title": "Motors", "description": "Lowercase snake_case, e.g. nema17, nema23, closed_loop_stepper, servo.",
+          "x-labels": { "nema17": "NEMA 17", "nema23": "NEMA 23", "nema34": "NEMA 34", "closed_loop_stepper": "Closed-loop stepper", "servo": "Servo" }
+        },
+        "drive_system": {
+          "type": ["string", "null"], "title": "Drive", "description": "Lowercase snake_case, e.g. leadscrew, ballscrew, belt, rack_and_pinion.",
+          "x-labels": { "leadscrew": "Lead screw", "ballscrew": "Ball screw", "belt": "Belt", "rack_and_pinion": "Rack and pinion" }
+        },
+        "linear_guides": {
+          "type": ["string", "null"], "title": "Linear guides", "description": "Lowercase snake_case, e.g. rods, linear_rails, v_wheels.",
+          "x-labels": { "rods": "Round rods", "linear_rails": "Linear rails", "v_wheels": "V-wheels", "box_ways": "Box ways", "dovetail": "Dovetail ways" }
+        },
+        "feed": { "type": ["number", "null"], "minimum": 0, "title": "Max. feed rate", "x-unit": "mm/min", "x-better": "higher" },
+        "repeatability": { "type": ["number", "null"], "minimum": 0, "title": "Repeatability", "x-unit": "mm", "x-better": "lower" }
+      }
+    },
+    "spindle": {
+      "type": "object", "title": "Spindle", "x-icon": "drill", "additionalProperties": false,
+      "properties": {
+        "power": { "type": ["number", "null"], "minimum": 0, "title": "Spindle power", "x-unit": "W", "x-better": "higher" },
+        "cooling": {
+          "type": ["string", "null"], "enum": ["air", "water", null], "title": "Spindle cooling",
+          "x-labels": { "air": "Air", "water": "Water" }
+        },
+        "system": { "type": ["string", "null"], "title": "Tool holder", "description": "Collet or holder system, e.g. ER11, ER20, BT30, proprietary." },
+        "tools": { "type": ["integer", "null"], "minimum": 0, "title": "Tool slots (ATC)", "x-better": "higher", "description": "Automatic tool changer capacity; 1 = manual tool change." },
+        "max_rpm": { "type": ["number", "null"], "minimum": 0, "title": "Max. speed", "x-unit": "rpm", "x-better": "higher" },
+        "min_rpm": { "type": ["number", "null"], "minimum": 0, "title": "Min. speed", "x-unit": "rpm", "x-better": "lower" },
+        "diameter": { "type": ["number", "null"], "minimum": 0, "title": "Spindle diameter", "x-unit": "mm" },
+        "runout": { "type": ["number", "null"], "minimum": 0, "title": "Runout", "x-unit": "mm", "x-better": "lower" }
+      }
+    },
+    "coolant": {
+      "type": "object", "title": "Coolant", "x-icon": "droplets", "additionalProperties": false,
+      "properties": {
+        "mql": { "type": ["boolean", "null"], "title": "Mist / MQL" },
+        "flood": { "type": ["boolean", "null"], "title": "Flood coolant" }
+      }
+    },
+    "probe": {
+      "type": "object", "title": "Probing", "x-icon": "crosshair", "additionalProperties": false,
+      "properties": {
+        "tool_length": { "type": ["boolean", "null"], "title": "Tool length sensor" },
+        "z_probe": { "type": ["boolean", "null"], "title": "Z probe" },
+        "probe_3d": { "type": ["boolean", "null"], "title": "3D touch probe" }
+      }
+    },
+    "media": {
+      "type": "object", "title": "Links", "x-icon": "link", "additionalProperties": false,
+      "properties": {
+        "website": { "type": ["string", "null"], "format": "uri", "title": "Website" },
+        "youtube": { "type": "array", "items": { "type": "string", "format": "uri" }, "title": "Videos" },
+        "discord": { "type": ["string", "null"], "format": "uri", "title": "Community" }
+      }
+    },
+    "accessories": {
+      "type": "array", "title": "Accessories", "x-icon": "package",
+      "description": "Optional add-ons sold by the vendor. Prices use the machine's currency.",
+      "items": {
+        "type": "object", "required": ["name"], "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "price": { "type": ["number", "null"], "minimum": 0 },
+          "image_url": { "type": ["string", "null"] },
+          "description": { "type": ["string", "null"] },
+          "url": { "type": ["string", "null"], "format": "uri" }
+        }
+      }
+    }
+  }
+}
