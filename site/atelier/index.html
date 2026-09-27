@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Atelier · Desktop CNC machines, thoughtfully compared</title>
+  <meta name="description" content="An editorial index of desktop CNC mills and lathes. Search every specification, filter by any parameter and compare up to four machines side by side.">
+  <meta name="theme-color" content="#f6f2ec">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="no-referrer">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%231f4a3a'/%3E%3Cpath d='M19 47 32 15l13 32M24 37h16' fill='none' stroke='%23f6f2ec' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/fraunces-opsz.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#results">Skip to results</a>
+
+  <header class="topbar" id="topbar">
+    <div class="wrap topbar-in">
+      <a class="brand" href="./">
+        <span class="brand-name">Atelier</span>
+        <span class="brand-tag">Desktop CNC Index</span>
+      </a>
+      <a class="picker-link" href="../"><span data-icon="arrow-left"></span><span>All designs</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow hero-eyebrow" id="hero-eyebrow">The desktop CNC index</p>
+        <h1 id="hero-title">Desktop machines, <em>thoughtfully compared.</em></h1>
+        <p class="hero-lede">Specifications, prices and availability for desktop mills and lathes. Search anything, filter by every parameter and set up to four machines side by side.</p>
+        <form class="search" id="search" role="search">
+          <label class="sr-only" for="q">Search machines</label>
+          <span class="search-icon" data-icon="search"></span>
+          <input id="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="Search models, makers, specs…">
+          <kbd class="search-kbd" aria-hidden="true">/</kbd>
+          <button type="button" class="search-clear" id="q-clear" aria-label="Clear search" hidden><span data-icon="x"></span></button>
+        </form>
+      </div>
+      <div class="hero-art" id="hero-art" role="group" aria-label="Featured machines"></div>
+    </section>
+
+    <div class="sentinel" id="sentinel" aria-hidden="true"></div>
+    <div class="filterbar" id="filterbar">
+      <div class="wrap filterbar-in">
+        <button class="mini-search" id="mini-search" type="button" aria-label="Search machines" tabindex="-1"><span data-icon="search"></span></button>
+        <button class="pill pill-all" id="open-filters" type="button" aria-haspopup="dialog" disabled>
+          <span data-icon="sliders-horizontal"></span><span>All filters</span><span class="badge" id="filter-badge" hidden></span>
+        </button>
+        <span class="pills-rule" aria-hidden="true"></span>
+        <div class="pills" id="pills" role="group" aria-label="Quick filters"></div>
+      </div>
+    </div>
+
+    <section class="results wrap" id="results" aria-labelledby="count" tabindex="-1">
+      <div class="results-head">
+        <h2 class="count" id="count" aria-live="polite">Loading machines…</h2>
+        <label class="sort" id="sort-wrap" hidden>
+          <span class="sort-label">Sort by</span>
+          <select id="sort"></select>
+          <span class="sort-chev" data-icon="chevron-down"></span>
+        </label>
+      </div>
+      <div class="active" id="active"></div>
+      <ul class="grid" id="grid" role="list" aria-busy="true">
+        <li class="skel" aria-hidden="true"><div class="card"><div class="card-media"></div><div class="card-body"><i></i><i></i><i></i></div></div></li>
+        <li class="skel" aria-hidden="true"><div class="card"><div class="card-media"></div><div class="card-body"><i></i><i></i><i></i></div></div></li>
+        <li class="skel" aria-hidden="true"><div class="card"><div class="card-media"></div><div class="card-body"><i></i><i></i><i></i></div></div></li>
+        <li class="skel" aria-hidden="true"><div class="card"><div class="card-media"></div><div class="card-body"><i></i><i></i><i></i></div></div></li>
+        <li class="skel" aria-hidden="true"><div class="card"><div class="card-media"></div><div class="card-body"><i></i><i></i><i></i></div></div></li>
+        <li class="skel" aria-hidden="true"><div class="card"><div class="card-media"></div><div class="card-body"><i></i><i></i><i></i></div></div></li>
+      </ul>
+      <div class="state" id="state" hidden></div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="wrap footer-in">
+      <p class="footer-mark">Atelier</p>
+      <p class="footer-note">Specifications as published by the makers and kept current by the community. Prices are shown in the vendor’s currency; euro equivalents use static rates and serve sorting and filtering only.</p>
+      <p class="footer-links"><a href="../">Other designs</a><a href="https://github.com/oxelf/desktop_cnc_compare">Contribute a machine</a></p>
+    </div>
+  </footer>
+
+  <div class="tray" id="tray" role="region" aria-label="Comparison selection" hidden></div>
+
+  <dialog class="panel" id="panel" aria-labelledby="panel-title">
+    <div class="panel-head">
+      <div>
+        <p class="eyebrow">Refine</p>
+        <h2 class="panel-title" id="panel-title">All filters</h2>
+      </div>
+      <button class="icon-btn" type="button" data-close aria-label="Close filters"><span data-icon="x"></span></button>
+    </div>
+    <div class="panel-body" id="panel-body"></div>
+    <div class="panel-foot">
+      <button class="btn ghost" type="button" data-clear-all>Clear all</button>
+      <button class="btn accent grow" type="button" data-close id="panel-show">Show machines</button>
+    </div>
+  </dialog>
+
+  <div class="qp" id="qp" role="dialog" aria-label="Filter" popover></div>
+
+  <section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+    <header class="sheet-bar">
+      <button class="back" type="button" id="sheet-back"><span data-icon="arrow-left"></span><span class="back-t">All machines</span></button>
+      <h2 class="sheet-title" id="sheet-title" tabindex="-1"><span class="t-long">Comparison</span><span class="t-short" aria-hidden="true">Compare</span> <small id="sheet-count"></small></h2>
+      <label class="switch" id="diff-wrap">
+        <input type="checkbox" role="switch" id="diff">
+        <span>Differences<span class="switch-long"> only</span></span>
+      </label>
+      <button class="icon-btn bar-btn" type="button" id="sheet-add" aria-label="Add a machine"><span data-icon="plus"></span></button>
+      <button class="icon-btn bar-btn" type="button" id="sheet-share" aria-label="Copy link to this comparison"><span data-icon="link"></span></button>
+    </header>
+    <div class="pane" id="pane" tabindex="-1"></div>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
