@@ -1,0 +1,54 @@
+{
+  "name": "Lunyee 3018 Pro Max",
+  "company": "Lunyee",
+  "price": 399.0,
+  "image_url": "https://www.lunyeecnc.com/cdn/shop/files/3018-pro-max_1.jpg?v=1766107104&width=1206",
+  "last_updated": "26.09.2026",
+  "stage": "available",
+  "general": {
+    "working_x": 300.0,
+    "working_y": 180.0,
+    "working_z": 80.0,
+    "enclosed": false,
+    "footprint_x": 422.0,
+    "footprint_y": 414.0,
+    "footprint_z": 350.0,
+    "accuracy": 0.1,
+    "axis": 3,
+    "control_system": "grbl",
+    "weight": 13,
+    "assembled": true,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": "nema17",
+    "drive_system": "leadscrew",
+    "linear_guides": "rods",
+    "feed": 5000,
+    "repeatability": 0.1
+  },
+  "spindle": {
+    "power": 500,
+    "cooling": "air",
+    "system": "ER11",
+    "tools": 1,
+    "max_rpm": 12000,
+    "min_rpm": 0,
+    "diameter": 52,
+    "runout": null
+  },
+  "coolant": {
+    "mql": false,
+    "flood": false
+  },
+  "probe": {
+    "tool_length": false,
+    "z_probe": false,
+    "probe_3d": false
+  },
+  "media": {
+    "website": "https://www.lunyeecnc.com/de/products/lunyee-3018-pro-max-cnc-router-laser-2-in-1-machine?variant=43274823696524",
+    "youtube": [],
+    "discord": null
+  }
+}
