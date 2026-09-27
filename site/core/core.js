@@ -1,4 +1,4 @@
-// Design-agnostic core shared by every design: data loading, schema-driven field
+// Shared core: data loading, schema-driven field
 // metadata, search / filter / sort, formatting and URL-hash state.
 // Everything is a pure function except loadCatalog (fetch) and createStore (location/history).
 
@@ -82,7 +82,7 @@ function toField(path, key, section, p) {
 
 export const get = (obj, path) => path.split('.').reduce((o, k) => o?.[k], obj);
 
-export const priceEUR = (m) => (m.price == null ? null : m.price * (EUR_RATES[m.currency ?? 'EUR'] ?? 1));
+const priceEUR = (m) => (m.price == null ? null : m.price * (EUR_RATES[m.currency ?? 'EUR'] ?? 1));
 
 // Comparable value: prices normalised to EUR, everything else raw.
 export const value = (m, field) => (field.unit === 'price' ? priceEUR(m) : get(m, field.path));

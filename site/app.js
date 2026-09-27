@@ -2,8 +2,8 @@
 import {
   MAX_COMPARE, best, createStore, differs, facets, filterMachines, formatPrice, get, hasData,
   label as valueLabel, loadCatalog, value, workArea,
-} from '../core/core.js';
-import { icon } from '../core/icons.js';
+} from './core/core.js';
+import { icon } from './core/icons.js';
 import { STYLES, envelope, isoScale, isoSVG, overlay, projectionSymbol, swatch } from './draw.js';
 
 // ---------- small helpers ----------
@@ -159,7 +159,7 @@ function render(state) {
   renderTray(state, view);
   syncSearch(state);
   const names = view === 'compare' && state.compare.map((id) => cat.machine(id)?.name).join(' vs ');
-  document.title = names ? `${names} — CNC Compare` : 'Desktop CNC Compare — Blueprint';
+  document.title = names ? `${names} — CNC Compare` : 'Desktop CNC Compare';
   if (changed && lastView !== null) afterViewChange(view);
   lastView = view;
 }

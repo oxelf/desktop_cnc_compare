@@ -2,49 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Desktop CNC Compare</title>
-  <meta name="description" content="Browse, filter and compare desktop CNC machines side by side. Pick one of three designs.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 6h4'/%3E%3Cpath d='m5 10-2 8'/%3E%3Cpath d='m7 18 2-8'/%3E%3Cpath d='M13 10H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1l-.81 3.242a1 1 0 0 1-.97.758H8'/%3E%3C/svg%3E">
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #f6f5f2; --fg: #16161a; --muted: #5d5d66; --card: #fff; --line: #e4e2dc;
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root { --bg: #0d0d10; --fg: #f1f1f3; --muted: #a0a0ab; --card: #17171c; --line: #2a2a31; }
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bg); color: var(--fg); min-height: 100dvh; display: grid; place-content: center; padding: 48px 16px; }
-    header { text-align: center; max-width: 640px; margin: 0 auto 40px; }
-    h1 { font-size: clamp(2rem, 5vw, 3.25rem); letter-spacing: -0.03em; margin: 0 0 12px; }
-    header p { color: var(--muted); font-size: 1.125rem; line-height: 1.5; margin: 0; }
-    ul { list-style: none; padding: 0; margin: 0 auto; display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); max-width: 1200px; }
-    a { display: block; height: 100%; color: inherit; text-decoration: none; background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; transition: transform .2s ease, box-shadow .2s ease; }
-    a:hover { transform: translateY(-4px); box-shadow: 0 18px 40px -18px rgb(0 0 0 / .35); }
-    a:focus-visible { outline: 3px solid #6d5dfc; outline-offset: 3px; }
-    img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; background: var(--line); }
-    .body { padding: 18px 20px 22px; }
-    h2 { margin: 0 0 6px; font-size: 1.25rem; }
-    .body p { margin: 0; color: var(--muted); line-height: 1.5; }
-    footer { text-align: center; margin-top: 40px; color: var(--muted); font-size: .875rem; }
-    footer a { display: inline; background: none; border: 0; text-decoration: underline; }
-    @media (prefers-reduced-motion: reduce) { a { transition: none; } a:hover { transform: none; } }
-  </style>
+  <meta name="description" content="Spec-sheet comparison of desktop CNC mills and lathes: filter by any parameter, compare up to four machines side by side with to-scale work envelopes.">
+  <meta name="theme-color" content="#F4F3EE" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0C3263" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230F1E36'/%3E%3Crect x='7' y='7' width='18' height='18' fill='none' stroke='%23FF5A00' stroke-width='2.5'/%3E%3Cpath d='M16 2v8M16 22v8M2 16h8M22 16h8' stroke='%23F4F3EE' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/ibm-plex-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply the saved drawing mode before first paint (no flash).
+    try {
+      const t = localStorage.getItem('bp-theme');
+      document.documentElement.dataset.theme = t || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch { document.documentElement.dataset.theme = 'light'; }
+  </script>
+  <script type="module" src="app.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Desktop CNC Compare</h1>
-    <p>Every desktop CNC machine in one place: search, filter by any spec and compare up to four side by side. Same data, three designs. Pick the one you like.</p>
+  <a class="skip" href="#main">Skip to results</a>
+
+  <header class="appbar">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect class="bm-bg" width="32" height="32"/><rect class="bm-sq" x="8" y="8" width="16" height="16"/><path class="bm-x" d="M16 3v8M16 21v8M3 16h8M21 16h8"/></svg>
+      <div class="brand-t">
+        <span class="brand-name">CNC<span class="slash">/</span>Compare</span>
+        <span class="brand-sub">Desktop machine register</span>
+      </div>
+    </div>
+    <div class="search" role="search">
+      <label class="sr" for="q">Search machines</label>
+      <svg class="icon search-i" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+      <input id="q" type="search" placeholder="Search machines, makers, specs…" autocomplete="off" spellcheck="false" enterkeyhint="search">
+      <kbd class="search-k" aria-hidden="true">/</kbd>
+    </div>
+    <nav class="appbar-r" aria-label="Site">
+      <button class="icon-btn" id="theme" type="button" aria-label="Switch to blueprint mode" title="Blueprint mode"></button>
+    </nav>
   </header>
-  <main>
-    <ul>
-      <li><a href="aurora/"><img src="previews/aurora.jpg" alt="Preview of the Aurora design" loading="lazy"><div class="body"><h2>Aurora</h2><p>Dark glass, aurora gradients and a command-bar search.</p></div></a></li>
-      <li><a href="blueprint/"><img src="previews/blueprint.jpg" alt="Preview of the Blueprint design" loading="lazy"><div class="body"><h2>Blueprint</h2><p>Technical spec sheets, to-scale work envelopes and a parametric sidebar.</p></div></a></li>
-      <li><a href="atelier/"><img src="previews/atelier.jpg" alt="Preview of the Atelier design" loading="lazy"><div class="body"><h2>Atelier</h2><p>Warm editorial layout with big imagery and serif typography.</p></div></a></li>
-    </ul>
-  </main>
-  <footer>Data lives on <a href="https://github.com/oxelf/desktop_cnc_compare">GitHub</a>. Missing a machine or found a wrong value? Open a pull request.</footer>
+  <div class="ruler" aria-hidden="true"></div>
+
+  <div class="layout" id="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Filters">
+      <div class="panel" id="panel">
+        <div class="panel-head">
+          <h2 class="panel-title">Parameters</h2>
+        </div>
+        <div class="skel-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+    </aside>
+
+    <main id="main" tabindex="-1">
+      <section class="catalog" id="catalog" aria-labelledby="h-catalog">
+        <div class="cat-head">
+          <div class="cat-title">
+            <p class="eyebrow">Sheet 01 · Register</p>
+            <h1 id="h-catalog">Desktop CNC machines</h1>
+            <p class="count" id="count" aria-live="polite">Loading data…</p>
+          </div>
+          <div class="tools" id="tools" hidden></div>
+        </div>
+        <div class="chips" id="chips" hidden></div>
+        <div class="results grid" id="results" aria-busy="true">
+          <div class="loading" role="status">
+            <svg class="plot" viewBox="0 0 120 80" aria-hidden="true"><path d="M20 58 L60 35 L100 58 L60 78 Z M20 58 V26 L60 5 L100 26 V58 M60 35 V5 M20 26 L60 45 L100 26 M60 45 V78"/></svg>
+            <span>Plotting machine register…</span>
+          </div>
+          <div class="card skel" aria-hidden="true"></div><div class="card skel" aria-hidden="true"></div><div class="card skel" aria-hidden="true"></div>
+          <div class="card skel" aria-hidden="true"></div><div class="card skel" aria-hidden="true"></div><div class="card skel" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="compare" id="compare" aria-labelledby="h-compare" hidden></section>
+    </main>
+  </div>
+
+  <footer class="titleblock" id="titleblock">
+    <div class="tb-grid">
+      <div class="tb-cell tb-title"><span class="tb-k">Title</span><span class="tb-v">Desktop CNC Compare</span></div>
+      <div class="tb-cell"><span class="tb-k">Data</span><span class="tb-v" id="tb-count">—</span></div>
+      <div class="tb-cell"><span class="tb-k">Rev.</span><span class="tb-v" id="tb-rev">—</span></div>
+      <div class="tb-cell"><span class="tb-k">Units</span><span class="tb-v">mm · W · rpm · kg</span></div>
+      <div class="tb-cell tb-wide"><span class="tb-k">Prices</span><span class="tb-v">Vendor list price in the vendor’s currency; sorting &amp; filtering use static EUR rates.</span></div>
+      <div class="tb-cell"><span class="tb-k">Sheet</span><span class="tb-v">Blueprint · 1 / 1</span></div>
+      <div class="tb-cell tb-links"><a href="https://github.com/oxelf/desktop_cnc_compare" rel="noopener">Contribute data ↗</a></div>
+    </div>
+    <p class="tb-legal">Type: IBM Plex Sans &amp; JetBrains Mono (SIL OFL 1.1, self-hosted). Icons: Lucide (ISC). Machine images are hotlinked from vendors.</p>
+  </footer>
+
+  <aside class="tray" id="tray" aria-label="Comparison selection" hidden></aside>
+
+  <dialog class="drawer" id="drawer" aria-labelledby="drawer-t">
+    <div class="drawer-head">
+      <h2 id="drawer-t">Parameters</h2>
+      <button class="icon-btn" type="button" data-close-drawer aria-label="Close filters"></button>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+    <div class="drawer-foot">
+      <button class="btn ghost" type="button" data-clear>Reset</button>
+      <button class="btn primary" type="button" data-close-drawer id="drawer-show">Show results</button>
+    </div>
+  </dialog>
+
+  <ul class="combo-list" id="add-list" role="listbox" aria-label="Machines" hidden></ul>
 </body>
 </html>

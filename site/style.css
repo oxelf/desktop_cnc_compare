@@ -190,12 +190,6 @@ code { font-family: var(--mono); font-size: 0.92em; }
 .search input:not(:placeholder-shown) ~ .search-k { display: none; }
 
 .appbar-r { display: flex; align-items: center; gap: 10px; padding: 0 20px; }
-.back {
-  display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 12px;
-  border: 1px solid var(--line); color: var(--ink); text-decoration: none;
-  font: 600 11px/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase;
-}
-.back:hover { background: var(--ink); color: var(--paper); }
 
 .ruler {
   height: 10px; border-bottom: 1px solid var(--line-2);
@@ -893,8 +887,6 @@ body.is-compare .titleblock { margin-top: 0; }
   .search { grid-row: 2; grid-column: 1 / -1; width: auto; max-width: none; margin: 0 16px 12px; }
   .search-k { display: none; }
   .appbar-r { padding: 0 12px; gap: 8px; }
-  .back { width: 36px; padding: 0; justify-content: center; }
-  .back-t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   .layout, .layout:not(.is-compare) { grid-template-columns: minmax(0, 1fr); background: none; }
   .sidebar { display: none; }
   .filters-btn { display: inline-flex; }
