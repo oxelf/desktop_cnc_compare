@@ -1,0 +1,113 @@
+{
+  "$schema": "../schema.json",
+  "name": "Xhorse3D Xmachine WM-100",
+  "company": "Xhorse3D",
+  "price": 5899,
+  "currency": "USD",
+  "image_url": "https://i.kickstarter.com/assets/053/958/588/2eae032434b6d3a434fdbce7c327d0be_original.jpg?fit=scale-down&origin=ugc&q=92&v=1780403431&width=680&sig=vgwg%2FQZIIY0MSIfb5cuo%2FOA2fs2GMipRv99qYZgRClU%3D",
+  "last_updated": "27.09.2026",
+  "stage": "crowdfunding",
+  "notes": "Live Kickstarter campaign (HK-based, pledges in HKD) ending 25.10.2026. Price = Super Early Bird, creator-stated US$5,899 (HK$46,248), incl. standard kit with wireless probe; MSRP US$8,399; shipping extra (DAP), first batch planned Jan 2027. Per Xhorse3D's 29.08.2026 announcement the WM-100 needs an NSG export license and the campaign is open only to businesses/institutions; individual export applications have so far been rejected. A-axis -30° to 110°, C-axis 360°; max workpiece Ø140 × 120 / 110 × 110 × 120 mm (5-axis), 150 × 150 × 120 mm (3+2); A/C accuracy ±50\", repeatability ±10\". Spindle 1.5 kW, 0.6 N·m rated / 1.3 N·m max, max tool Ø6 mm; servo ATC; laser-scanning workpiece positioning, built-in camera, plasma anti-static module. Machine rated power 2.2 kW.",
+  "general": {
+    "machine_type": "mill",
+    "axis": 5,
+    "working_x": 156,
+    "working_y": 200,
+    "working_z": 125,
+    "enclosed": true,
+    "footprint_x": 797,
+    "footprint_y": 614,
+    "footprint_z": 580,
+    "weight": 130,
+    "accuracy": 0.01,
+    "control_system": "proprietary",
+    "assembled": true,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": "servo",
+    "drive_system": "ballscrew",
+    "linear_guides": "linear_rails",
+    "feed": 6000,
+    "repeatability": 0.01
+  },
+  "spindle": {
+    "power": 1500,
+    "cooling": "air",
+    "system": "60E collet",
+    "tools": 6,
+    "max_rpm": 20000,
+    "min_rpm": null,
+    "diameter": null,
+    "runout": null
+  },
+  "coolant": {
+    "mql": true,
+    "flood": false
+  },
+  "probe": {
+    "tool_length": true,
+    "z_probe": null,
+    "probe_3d": true
+  },
+  "media": {
+    "website": "https://www.kickstarter.com/projects/xhorse3d/xhorse3d-xmachine-wm-100-desktop-simultaneous-5-axis-cnc",
+    "youtube": [
+      "https://www.youtube.com/watch?v=EhSIvQyUZH8",
+      "https://www.youtube.com/watch?v=7fv7Wham7fc",
+      "https://www.youtube.com/watch?v=Sl1oBOOsTow"
+    ],
+    "discord": "https://www.facebook.com/groups/510178127720391"
+  },
+  "accessories": [
+    {
+      "name": "Wireless Probe",
+      "price": 389,
+      "image_url": "https://i.kickstarter.com/assets/055/055/486/b04af6cc055d72e92e015ba4c70e5325_original.jpg?fit=scale-down&origin=ugc&q=80&v=1788937457&width=600&sig=oFOZBXusd02gbdOyQWtUaDzVSwZK4afXVS6CI%2FL4XRY%3D",
+      "description": "Additional wireless touch probe for automatic centering, workpiece measurement and axis calibration (one is already in the Kickstarter standard kit).",
+      "url": "https://www.kickstarter.com/projects/xhorse3d/xhorse3d-xmachine-wm-100-desktop-simultaneous-5-axis-cnc/rewards"
+    },
+    {
+      "name": "Xscanner 3D Laser Scanner",
+      "price": 599,
+      "image_url": "https://i.kickstarter.com/assets/055/055/498/4df134909730c2f8c07327ed766d525f_original.jpg?fit=scale-down&origin=ugc&q=80&v=1788937494&width=600&sig=IaIJQhVMb6j4FQarDMqXcU%2FG1OFoARDeXz6WqUYbnXw%3D",
+      "description": "Xhorse3D handheld 3D laser scanner for capturing objects to reproduce on the machine.",
+      "url": "https://www.xhorse3d.com/product-xscanner"
+    },
+    {
+      "name": "SYNDRA High-Efficiency Wet/Dry Dust Collector",
+      "price": 509,
+      "image_url": "https://i.kickstarter.com/assets/055/058/670/26339ed1829d07dcb35ade045a1306e9_original.jpg?fit=scale-down&origin=ugc&q=80&v=1788956820&width=600&sig=EAhfNHjAT4cIg74wwa5SUxPr4TOmseIS1yi4E%2FKgXqg%3D",
+      "description": "Wet/dry dust and chip collector for the machine.",
+      "url": "https://www.kickstarter.com/projects/xhorse3d/xhorse3d-xmachine-wm-100-desktop-simultaneous-5-axis-cnc/rewards"
+    },
+    {
+      "name": "Basic HYDROX Self-Pressurizing Water Tank",
+      "price": 229,
+      "image_url": "https://i.kickstarter.com/assets/055/072/088/14086b19dd22cc866c312f46d7deec39_original.jpg?fit=scale-down&origin=ugc&q=80&v=1789045462&width=600&sig=wOYtj%2Fg%2FprKZyDPZ6xzR1MU3YYtrx%2FwsNR3v0s%2FA8yg%3D",
+      "description": "Coolant tank with built-in water and air pumps for mist cooling without an external air compressor.",
+      "url": "https://www.kickstarter.com/projects/xhorse3d/xhorse3d-xmachine-wm-100-desktop-simultaneous-5-axis-cnc/rewards"
+    },
+    {
+      "name": "Vise Set (4 pcs)",
+      "price": 199,
+      "image_url": "https://i.kickstarter.com/assets/055/055/469/f7686b6c765fba2e4442f084a3901842_original.jpg?fit=scale-down&origin=ugc&q=80&v=1788937367&width=600&sig=I5GWQFzB1YSfBE27uG7URoIHcx6h6%2FGZQFK%2BRDiwA8c%3D",
+      "description": "Workholding set: 7-67 mm vise plus jaws for round stock Ø13-22, 22-40 and 40-86 mm.",
+      "url": "https://www.kickstarter.com/projects/xhorse3d/xhorse3d-xmachine-wm-100-desktop-simultaneous-5-axis-cnc/rewards"
+    },
+    {
+      "name": "Reduction Sleeve Set (9 pcs)",
+      "price": 79,
+      "image_url": "https://i.kickstarter.com/assets/055/055/458/5a2846ff094a90f116639f2e72a1d65c_original.jpg?fit=scale-down&origin=ugc&q=80&v=1788937285&width=600&sig=RDeTnTYNy2jgdMXz%2FR56p3cZdHoz1d8VuBoXSuNf7Kk%3D",
+      "description": "Sleeves reducing the 6 mm tool bore to 4, 3.175 and 3 mm shanks (3 each).",
+      "url": "https://www.kickstarter.com/projects/xhorse3d/xhorse3d-xmachine-wm-100-desktop-simultaneous-5-axis-cnc/rewards"
+    },
+    {
+      "name": "Tool Holder Set (12 pcs)",
+      "price": 7.9,
+      "image_url": "https://i.kickstarter.com/assets/055/055/449/0ba50e5defa5be72324647ffa45cc49d_original.jpg?fit=scale-down&origin=ugc&q=80&v=1788937222&width=600&sig=LXA%2BGn76JhNzI6SfWaMgN6BVd8yrPqETvuOBnMKID3A%3D",
+      "description": "Tool rings (holders) with 6, 4, 3.175 and 3 mm inner diameter, three of each.",
+      "url": "https://www.kickstarter.com/projects/xhorse3d/xhorse3d-xmachine-wm-100-desktop-simultaneous-5-axis-cnc/rewards"
+    }
+  ]
+}

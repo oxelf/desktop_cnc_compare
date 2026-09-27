@@ -1,0 +1,92 @@
+{
+  "$schema": "../schema.json",
+  "name": "InfiMaker K1",
+  "company": "InfiMaker",
+  "price": 5699,
+  "currency": "USD",
+  "image_url": "https://infimaker.com/cdn/shop/articles/infimaker-k1-5-axis-desktop-cnc-machine_47c1ba75-35d2-4cdd-87c2-8e9cc1398217.webp?v=1786712159",
+  "last_updated": "27.09.2026",
+  "stage": "crowdfunding",
+  "notes": "Kickstarter campaign ended 26.09.2026 (funded, ~800 backers). Price is the Kickstarter Late Pledge for the base K1 kit (creator-stated US$5,699, shown on Kickstarter as HK$44,712; incl. basic material kit, 6 mm bit set, tool kit; shipping extra; est. delivery Feb 2027). Super Early Bird was US$5,199; stated MSRP US$9,499. Trunnion B -30° to 110°, C 360°; max workpiece 120x120x120 mm (5-axis), 170x150x150 mm (3+2), 220x150x150 mm (3-axis). ATC has 6 stations = 5 tools + ruby probe. Feed = max rapid; max cutting feed 2,500 mm/min. InfiFlow high-pressure water coolant is an optional add-on.",
+  "general": {
+    "machine_type": "mill",
+    "axis": 5,
+    "working_x": 220,
+    "working_y": 160,
+    "working_z": 180,
+    "enclosed": true,
+    "footprint_x": 560,
+    "footprint_y": 700,
+    "footprint_z": 800,
+    "weight": 110,
+    "accuracy": 0.01,
+    "control_system": "proprietary",
+    "assembled": true,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": null,
+    "drive_system": "ballscrew",
+    "linear_guides": "linear_rails",
+    "feed": 4500,
+    "repeatability": 0.01
+  },
+  "spindle": {
+    "power": 1500,
+    "cooling": null,
+    "system": null,
+    "tools": 5,
+    "max_rpm": 20000,
+    "min_rpm": null,
+    "diameter": null,
+    "runout": null
+  },
+  "coolant": {
+    "mql": null,
+    "flood": false
+  },
+  "probe": {
+    "tool_length": null,
+    "z_probe": null,
+    "probe_3d": true
+  },
+  "media": {
+    "website": "https://infimaker.com/pages/infimaker-k1",
+    "youtube": [
+      "https://www.youtube.com/watch?v=cvT6_xvMIUo",
+      "https://www.youtube.com/watch?v=PvG_Tw6nGwU",
+      "https://www.youtube.com/watch?v=iWqjGR7NQZc"
+    ],
+    "discord": "https://www.facebook.com/groups/infimakerofficial"
+  },
+  "accessories": [
+    {
+      "name": "InfiFlow Water Coolant System",
+      "price": 599,
+      "image_url": "https://i.kickstarter.com/assets/055/251/692/0b31215c66b890a5ecaa3134c9ad8013_original.jpg?fit=scale-down&origin=ugc&q=80&v=1790248950&width=600&sig=4rAFTKhMEeTrnowgr0w3VMLG%2Bd4Ya81WqE%2BXFIawUi4%3D",
+      "description": "Compact high-pressure water coolant system with automatic operation and multi-stage filtration for machining stainless steel and titanium.",
+      "url": "https://www.kickstarter.com/projects/infimaker/infimaker-k1-the-pro-grade-desktop-5-axis-cnc/rewards"
+    },
+    {
+      "name": "Zero-Lag Handwheel",
+      "price": 79,
+      "image_url": "https://i.kickstarter.com/assets/054/760/738/b38a68a0a97198111cfcdec367e454b7_original.png?fit=scale-down&origin=ugc&q=80&v=1786712313&width=600&sig=nUcqg%2FzNG4LWNKskTp9K1YIQgIXHUZssulfVezZ85bQ%3D",
+      "description": "Battery-free handwheel for micron-level tool setting and manually stepping through G-code to verify 5-axis toolpaths.",
+      "url": "https://www.kickstarter.com/projects/infimaker/infimaker-k1-the-pro-grade-desktop-5-axis-cnc/rewards"
+    },
+    {
+      "name": "V-Groove Vise Jaw Kit",
+      "price": 102,
+      "image_url": "https://i.kickstarter.com/assets/054/737/097/e24960947ee10b85bb4b5afb2dc2a65f_original.jpg?fit=scale-down&origin=ugc&q=80&v=1786538290&width=600&sig=F%2BihmYus%2F8ijYUBE4wG65pUuGPyEAzpYdcnCv3rEVoc%3D",
+      "description": "V-groove jaws, interchangeable with the standard vise jaws, for securely gripping round stock (includes a 50x100 mm aluminum round bar).",
+      "url": "https://www.kickstarter.com/projects/infimaker/infimaker-k1-the-pro-grade-desktop-5-axis-cnc/rewards"
+    },
+    {
+      "name": "Tool Kit",
+      "price": 45,
+      "image_url": "https://i.kickstarter.com/assets/054/737/143/4712d77dc0b40f1607f269371ed715df_original.jpg?fit=scale-down&origin=ugc&q=80&v=1786538618&width=600&sig=%2FSBfItYzOa9qsrC1xbKdrfkoSayNr1OHat2cH02gQc0%3D",
+      "description": "Metric hex keys, socket wrench, safety goggles, chip brush and bit installation tool for setup and daily operation.",
+      "url": "https://www.kickstarter.com/projects/infimaker/infimaker-k1-the-pro-grade-desktop-5-axis-cnc/rewards"
+    }
+  ]
+}

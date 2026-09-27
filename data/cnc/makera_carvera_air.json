@@ -1,0 +1,106 @@
+{
+  "$schema": "../schema.json",
+  "name": "Makera Carvera Air",
+  "company": "Makera",
+  "price": 2249.0,
+  "currency": "EUR",
+  "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/air-1_fadbefd9-0776-44b2-b5fe-8ed4f08154fe.jpg?v=1775113936&width=1200",
+  "last_updated": "27.09.2026",
+  "stage": "available",
+  "notes": "EU store price (5th-anniversary sale; regular €2,749). Guides are mixed: X/Y 20 mm hardened chrome-plated rods, Z 15 mm linear rail; ball screws on all axes. Weight 30 kg per spec table (manual: ~35 kg net). Accuracy = stated resolution. Quick manual tool change with custom collet (1/8\" standard; 1/4\", 6, 4, 3 mm optional). Wired Z probe and automatic tool setter included. Needs an external dust collector; supports external air assist. Optional 4th axis (Ø92 × 200 mm) and 5 W laser.",
+  "general": {
+    "machine_type": "mill",
+    "axis": 3,
+    "working_x": 300.0,
+    "working_y": 200.0,
+    "working_z": 130.0,
+    "enclosed": true,
+    "footprint_x": 500.0,
+    "footprint_y": 450.0,
+    "footprint_z": 450.0,
+    "weight": 30.0,
+    "accuracy": 0.01,
+    "control_system": "smoothieware",
+    "assembled": true,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": "closed_loop_stepper",
+    "drive_system": "ballscrew",
+    "linear_guides": "rods",
+    "feed": 4000,
+    "repeatability": null
+  },
+  "spindle": {
+    "power": 200,
+    "cooling": "air",
+    "system": "proprietary",
+    "tools": 1,
+    "max_rpm": 13000,
+    "min_rpm": 0,
+    "diameter": null,
+    "runout": 0.01
+  },
+  "coolant": {
+    "mql": false,
+    "flood": false
+  },
+  "probe": {
+    "tool_length": true,
+    "z_probe": true,
+    "probe_3d": false
+  },
+  "media": {
+    "website": "https://eu.makera.com/de/products/carvera-air",
+    "youtube": [
+      "https://www.youtube.com/watch?v=7Zs1ZtcPRHY",
+      "https://www.youtube.com/watch?v=p9jnhA2oC8s",
+      "https://www.youtube.com/watch?v=CynRyyO4Gko"
+    ],
+    "discord": "https://discord.com/invite/NQ5r9jGNXV"
+  },
+  "accessories": [
+    {
+      "name": "Carvera Air 4th Axis Module",
+      "price": 499.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/air_6e761033-5cdd-41ed-975c-14a2190e03bb.jpg?v=1765873277&width=1200",
+      "description": "Harmonic-drive rotary module for simultaneous 4-axis machining on the Carvera Air (Ø92 × 200 mm).",
+      "url": "https://eu.makera.com/de/products/carvera-air-4th-axis-module"
+    },
+    {
+      "name": "Carvera Air Laser Module",
+      "price": 149.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/air_c40490e4-6253-4d47-b8e8-0856fc5d645b.jpg?v=1765873274&width=1200",
+      "description": "5 W 445 nm diode laser head for engraving and cutting thin materials; includes safety goggles.",
+      "url": "https://eu.makera.com/de/products/carvera-air-laser-module"
+    },
+    {
+      "name": "Makera 3D Wired Probe",
+      "price": 89.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/5f0851991d11c4f27f4aa50d084cf703.jpg?v=1780641282&width=1200",
+      "description": "3D touch probe for edge, centre and surface finding on metal and non-metal workpieces.",
+      "url": "https://eu.makera.com/de/products/makera-3d-wired-probe"
+    },
+    {
+      "name": "Makera Cyclone Dust Collector",
+      "price": 619.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/20260509-155737_750839d3-c4fc-4727-98c6-fd6422382eb3.png?v=1778324481&width=1200",
+      "description": "Full-size cyclone dust collector with automated control for long, continuous milling jobs.",
+      "url": "https://eu.makera.com/de/products/makera-cyclone-dust-collector"
+    },
+    {
+      "name": "Makera Cyclone Dust Collector Lite",
+      "price": 359.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/d607457645dfc036ec01c5305f40d7fd.jpg?v=1780641283&width=1200",
+      "description": "Compact cyclone dust collector with automated machine control; the recommended extractor for the Z1.",
+      "url": "https://eu.makera.com/de/products/dust-collector-lite"
+    },
+    {
+      "name": "Makera Fixture Set for Carvera & Carvera Air",
+      "price": 89.98,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/FixtureSet_c2d92e11-3d6c-4c46-98e6-77ffe38d7296.jpg?v=1767668169&width=1200",
+      "description": "Two side clamps and a thick L-bracket for holding workpieces thicker than 2 cm.",
+      "url": "https://eu.makera.com/de/products/makera-fixture-set"
+    }
+  ]
+}

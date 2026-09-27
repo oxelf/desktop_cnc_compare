@@ -1,0 +1,98 @@
+{
+  "$schema": "../schema.json",
+  "name": "ApanMeker DL-210",
+  "company": "ApanMeker",
+  "price": 2599,
+  "currency": "USD",
+  "image_url": "https://horizons-cdn.hostinger.com/6136bca6-e418-463f-9741-6b521b125d1e/a-css_20260817104706-sugxY.png",
+  "last_updated": "27.09.2026",
+  "stage": "crowdfunding",
+  "notes": "Kickstarter campaign live (launched 12.09.2026, funded). Price is the Super Early Bird pledge; MSRP USD 4,399. Shipping is extra and includes customs duties and VAT; shipping planned for Dec 2026 by sea freight. Pledge includes a 4-jaw chuck in addition to the standard K11-80 3-jaw chuck; the tailstock is announced as a free upgrade for backers. DL-210 PRO (USD 2,899): 1200 W spindle and K11-125 chuck with 32 mm bore. Swing = stated max. machining diameter (80 mm). Coolant is an air-assisted spray system that needs an external compressor. Rated power draw is 1,500 W.",
+  "general": {
+    "machine_type": "lathe",
+    "axis": 2,
+    "working_x": 130,
+    "working_y": null,
+    "working_z": 200,
+    "enclosed": true,
+    "footprint_x": 830,
+    "footprint_y": 600,
+    "footprint_z": 650,
+    "weight": 103,
+    "accuracy": 0.01,
+    "control_system": "proprietary",
+    "assembled": true,
+    "only_base": false
+  },
+  "lathe": {
+    "swing_diameter": 80,
+    "turning_length": 200,
+    "spindle_bore": 18,
+    "live_tooling": false
+  },
+  "motion": {
+    "motor_kind": "servo",
+    "drive_system": "ballscrew",
+    "linear_guides": "linear_rails",
+    "feed": 3000,
+    "repeatability": 0.01
+  },
+  "spindle": {
+    "power": 800,
+    "cooling": null,
+    "system": "3-jaw chuck",
+    "tools": 4,
+    "max_rpm": 4000,
+    "min_rpm": null,
+    "diameter": null,
+    "runout": null
+  },
+  "coolant": {
+    "mql": true,
+    "flood": false
+  },
+  "probe": {
+    "tool_length": null,
+    "z_probe": null,
+    "probe_3d": null
+  },
+  "media": {
+    "website": "https://www.kickstarter.com/projects/apanmeker/apanmeker-dl-210-industrial-cnc-power-in-a-desktop-lathe",
+    "youtube": [
+      "https://www.youtube.com/watch?v=PUYHiX0UHR4",
+      "https://www.youtube.com/watch?v=YARjiDUS40E",
+      "https://www.youtube.com/watch?v=0CH0ZRLsO9k"
+    ],
+    "discord": null
+  },
+  "accessories": [
+    {
+      "name": "9-Piece 12 mm Lathe Tool Set",
+      "price": 69,
+      "image_url": "https://i.kickstarter.com/assets/054/997/904/4e8a93fdf31c12f8f13d41260568d27d_original.png?fit=scale-down&origin=ugc&q=80&v=1788494936&width=600&sig=l4Yn5N2Hm%2Btu%2B5lVVuc2%2BLpG259wudlMPBMkCbI6Crk%3D",
+      "description": "Nine 12x12 mm shank turning tools for turning, facing, grooving, parting, boring and threading.",
+      "url": "https://www.kickstarter.com/projects/apanmeker/apanmeker-dl-210-industrial-cnc-power-in-a-desktop-lathe/rewards"
+    },
+    {
+      "name": "Compact Air Compressor",
+      "price": 149,
+      "image_url": "https://i.kickstarter.com/assets/054/997/895/a16e0dd6b1a1970006f08b0dcb9f926b_original.png?fit=scale-down&origin=ugc&q=80&v=1788494884&width=600&sig=qtQ4lopi2xCUaRmXpWYVOtg67%2BoF6B0%2FD%2Fjt3YpowS4%3D",
+      "description": "230 W compressor (7 bar, 35 L/min) that supplies air for the DL-210 coolant spray system.",
+      "url": "https://www.kickstarter.com/projects/apanmeker/apanmeker-dl-210-industrial-cnc-power-in-a-desktop-lathe/rewards"
+    },
+    {
+      "name": "K11-125 Chuck Upgrade (32 mm Through-Bore)",
+      "price": 160,
+      "image_url": "https://i.kickstarter.com/assets/055/028/359/f7f0a8882ca2b68172a34f70fe260aeb_original.png?fit=scale-down&origin=ugc&q=80&v=1788772360&width=600&sig=R1TZfvpeA35HA7UxtQMbU%2Fq0T0FSzunc01ZP7wJZKt0%3D",
+      "description": "Replaces the K11-80 chuck with a K11-125 and upgrades the spindle parts to a 32 mm through-bore.",
+      "url": "https://www.kickstarter.com/projects/apanmeker/apanmeker-dl-210-industrial-cnc-power-in-a-desktop-lathe/rewards"
+    },
+    {
+      "name": "1200W Spindle Motor Upgrade",
+      "price": 200,
+      "image_url": "https://i.kickstarter.com/assets/055/028/331/d73bc7df34ac760c77cba5e0bd166860_original.png?fit=scale-down&origin=ugc&q=80&v=1788772170&width=600&sig=i7P52D%2BrY4T7sTX1BjZMPPDwOeRzi0CKRPyDEPIx5NQ%3D",
+      "description": "Replaces the standard 800 W servo spindle motor with a 1200 W motor for more cutting power.",
+      "url": "https://www.kickstarter.com/projects/apanmeker/apanmeker-dl-210-industrial-cnc-power-in-a-desktop-lathe/rewards"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "$schema": "../schema.json",
+  "name": "Rownd Desktop CNC Lathe",
+  "company": "Rownd Precision",
+  "price": 5969.95,
+  "currency": "EUR",
+  "image_url": "https://cdn.shopify.com/s/files/1/0714/2975/0828/files/Rownd_Standard_1.png?v=1776516218",
+  "last_updated": "27.09.2026",
+  "stage": "available",
+  "notes": "Kickstarter campaign (2023) delivered; now sold in the vendor store. Price is the Standard Package in the EU store (US store: USD 6,699); US/EU orders ship DDP. Standard includes 3-jaw chuck, quick-change tool post (10x10 mm tools), MT1 tailstock and basic tool set. Packages: 4th Axis EUR 6,236.95; Full (live tool + ATC + air cooling) EUR 7,127.95; Full Servo Edition (closed-loop servos on X/Z/C) EUR 8,018.95. Swing = listed max. workpiece diameter; turning length = max. workpiece length (275 mm on the Standard page, 285 mm on the package pages); spindle bore = listed chuck inner diameter.",
+  "general": {
+    "machine_type": "lathe",
+    "axis": 2,
+    "working_x": null,
+    "working_y": null,
+    "working_z": null,
+    "enclosed": true,
+    "footprint_x": 770,
+    "footprint_y": 470,
+    "footprint_z": 470,
+    "weight": 55,
+    "accuracy": null,
+    "control_system": "proprietary",
+    "assembled": true,
+    "only_base": false
+  },
+  "lathe": {
+    "swing_diameter": 135,
+    "turning_length": 275,
+    "spindle_bore": 12,
+    "live_tooling": false
+  },
+  "motion": {
+    "motor_kind": null,
+    "drive_system": null,
+    "linear_guides": "linear_rails",
+    "feed": 1000,
+    "repeatability": 0.02
+  },
+  "spindle": {
+    "power": 750,
+    "cooling": null,
+    "system": "3-jaw chuck",
+    "tools": 1,
+    "max_rpm": 3000,
+    "min_rpm": 0,
+    "diameter": null,
+    "runout": null
+  },
+  "coolant": {
+    "mql": false,
+    "flood": false
+  },
+  "probe": {
+    "tool_length": null,
+    "z_probe": null,
+    "probe_3d": null
+  },
+  "media": {
+    "website": "https://rowndprecision.com/en-eu/products/rownd-desktop-cnc-lathe-compact-modular-high-precision",
+    "youtube": [
+      "https://www.youtube.com/watch?v=zH4dAaf0kqM",
+      "https://www.youtube.com/watch?v=y5WZR8K9gb8",
+      "https://www.youtube.com/watch?v=NqtmvQOi27M"
+    ],
+    "discord": null
+  },
+  "accessories": [
+    {
+      "name": "Automatic Tool Changer (ATC) Add-On",
+      "price": 801.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0714/2975/0828/files/ATC.jpg?v=1776030519",
+      "description": "4-tool automatic tool changer controlled via G-code for multi-operation programs without manual tool changes.",
+      "url": "https://rowndprecision.com/en-eu/products/automatic-tool-changer"
+    },
+    {
+      "name": "4th Axis Spindle Kit (Live Tool) Add-On",
+      "price": 444.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0714/2975/0828/files/Addon2.jpg?v=1775110523&width=1200",
+      "description": "400 W ER11 live-tool spindle that adds milling, cross drilling and slotting to the lathe.",
+      "url": "https://rowndprecision.com/en-eu/products/spindle"
+    },
+    {
+      "name": "Air Cooling Add-On",
+      "price": 355.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0714/2975/0828/files/7.jpg?v=1776031007&width=1200",
+      "description": "Compressed-air blast (external 6-8 bar compressor) with G-code controlled solenoid valve for tool cooling and chip removal.",
+      "url": "https://rowndprecision.com/en-eu/products/air-cooler-1"
+    },
+    {
+      "name": "ER-32 Collet Chuck Set",
+      "price": 151.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0714/2975/0828/files/ER-32PensSeti.png?v=1779192695",
+      "description": "ER32 collet chuck with 80 mm flange for even 360-degree clamping and lower runout than the 3-jaw chuck.",
+      "url": "https://rowndprecision.com/en-eu/products/er-32-set"
+    },
+    {
+      "name": "Tool Set",
+      "price": 401.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0714/2975/0828/files/Toolset.png?v=1779190805&width=1000",
+      "description": "Starter set with inserts, drills, milling cutters and tool holders for the Rownd lathe.",
+      "url": "https://rowndprecision.com/en-eu/products/tool-set"
+    }
+  ]
+}

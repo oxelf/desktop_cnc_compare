@@ -1,0 +1,106 @@
+{
+  "$schema": "../schema.json",
+  "name": "IFMAKER M5",
+  "company": "IFMAKER",
+  "price": 7599,
+  "currency": "USD",
+  "image_url": "https://img.ifmaker.xyz/assets/img/chanpinzhutu.png",
+  "last_updated": "27.09.2026",
+  "stage": "crowdfunding",
+  "notes": "Kickstarter campaign ended 13.09.2026 (funded, 201 backers). Price is the currently available Kickstarter Late Pledge Core Bundle (US$7,599, equal to the stated MSRP; includes NearLink touch probe set, NearLink wireless handwheel, D6 collet, 2 end mills, stock blocks; shipping and taxes extra; est. delivery Feb 2027). Campaign tiers were US$5,299-5,999. Trunnion A -30° to 100°, C 360°; max workpiece Ø110x95 mm (5-axis), 130x180x110 mm (3-axis); RTCP accuracy ±0.06 mm. Spindle 1.8 kW S1 / 2.2 kW S6 (power listed = S6 peak), speed listed as 0-20,000 / 0-60,000 rpm; collet system '263504' for 3.175/4/6 mm shanks. Feed = max axis speed. Optional 1-year extended warranty (spindle, A/C reducers) US$199.",
+  "general": {
+    "machine_type": "mill",
+    "axis": 5,
+    "working_x": 150,
+    "working_y": 200,
+    "working_z": 125,
+    "enclosed": true,
+    "footprint_x": 815,
+    "footprint_y": 570,
+    "footprint_z": 800,
+    "weight": 135,
+    "accuracy": 0.01,
+    "control_system": "proprietary",
+    "assembled": null,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": "servo",
+    "drive_system": null,
+    "linear_guides": null,
+    "feed": 8000,
+    "repeatability": null
+  },
+  "spindle": {
+    "power": 2200,
+    "cooling": "water",
+    "system": null,
+    "tools": 4,
+    "max_rpm": 60000,
+    "min_rpm": null,
+    "diameter": null,
+    "runout": 0.005
+  },
+  "coolant": {
+    "mql": null,
+    "flood": true
+  },
+  "probe": {
+    "tool_length": true,
+    "z_probe": null,
+    "probe_3d": true
+  },
+  "media": {
+    "website": "https://ifmaker.xyz/products",
+    "youtube": [
+      "https://www.youtube.com/watch?v=iBf6vTFiE64",
+      "https://www.youtube.com/watch?v=1MEGy5q6fgE",
+      "https://www.youtube.com/watch?v=bS6AlEDRt1k"
+    ],
+    "discord": "https://ifmaker.xyz/community"
+  },
+  "accessories": [
+    {
+      "name": "NearLink Wireless Handwheel",
+      "price": 100,
+      "image_url": "https://i.kickstarter.com/assets/054/601/642/de63d1f2046f817dab3bc5a90e0f4726_original.jpg?fit=scale-down&origin=ugc&q=80&v=1785397446&width=600&sig=XsPFqnB96RHZXlY2lE%2BNxHbhsNQRE747PUpQ%2BodyhRM%3D",
+      "description": "Additional NearLink wireless handwheel with voice control (one is already included in every bundle).",
+      "url": "https://www.kickstarter.com/projects/ifmaker/ifmaker-m5-fully-integrated-desktop-5-axis-cnc/rewards"
+    },
+    {
+      "name": "Spare NearLink Touch Probe",
+      "price": 68,
+      "image_url": "https://i.kickstarter.com/assets/054/601/635/f83864f5831122194c614edcea59eda7_original.jpg?fit=scale-down&origin=ugc&q=80&v=1785397387&width=600&sig=v3Vkn2kfE1w4rgJDTPMf22wRPTuJKK3LB3XXX6nNOcE%3D",
+      "description": "Spare wireless touch probe for automatic workpiece coordinate and center detection.",
+      "url": "https://www.kickstarter.com/projects/ifmaker/ifmaker-m5-fully-integrated-desktop-5-axis-cnc/rewards"
+    },
+    {
+      "name": "Spare Tool Setter",
+      "price": 35,
+      "image_url": "https://i.kickstarter.com/assets/054/601/627/807afd1573420fe048509324172c23d4_original.jpg?fit=scale-down&origin=ugc&q=80&v=1785397348&width=600&sig=qFHrb8C7a0pGeVu534IbP6twakO0zaV0EQwXx8bK0t4%3D",
+      "description": "Replacement tool setter for the M5's tool length calibration.",
+      "url": "https://www.kickstarter.com/projects/ifmaker/ifmaker-m5-fully-integrated-desktop-5-axis-cnc/rewards"
+    },
+    {
+      "name": "Laser Module",
+      "price": 99,
+      "image_url": "https://i.kickstarter.com/assets/054/601/640/67c34ed87d5e8a042157213d52169aee_original.jpg?fit=scale-down&origin=ugc&q=80&v=1785397425&width=600&sig=eBQFPWMWDkZZLLUrWvJsALF0fXK3Cdlq2ah7m808%2FM8%3D",
+      "description": "Laser module add-on for the M5.",
+      "url": "https://www.kickstarter.com/projects/ifmaker/ifmaker-m5-fully-integrated-desktop-5-axis-cnc/rewards"
+    },
+    {
+      "name": "Coolant Water Pump",
+      "price": 10,
+      "image_url": "https://i.kickstarter.com/assets/054/601/618/4eddf4cd9157f00d838fad36036f8669_original.jpg?fit=scale-down&origin=ugc&q=80&v=1785397300&width=600&sig=D3WTbGq2LmSaRm5rHu9WHY%2BI5fWqDldnLjZcUyCs7wE%3D",
+      "description": "DC submersible water pump for the coolant system.",
+      "url": "https://www.kickstarter.com/projects/ifmaker/ifmaker-m5-fully-integrated-desktop-5-axis-cnc/rewards"
+    },
+    {
+      "name": "Tool Rack Holder",
+      "price": 10,
+      "image_url": "https://i.kickstarter.com/assets/054/601/620/8640d52de47fb470b7591ed247e46a60_original.jpg?fit=scale-down&origin=ugc&q=80&v=1785397322&width=600&sig=FiYtlw%2FpyqehCQCtUaxgkrFgAfo3iiVZipT6Sa3pJC8%3D",
+      "description": "Holder rack for storing tools.",
+      "url": "https://www.kickstarter.com/projects/ifmaker/ifmaker-m5-fully-integrated-desktop-5-axis-cnc/rewards"
+    }
+  ]
+}

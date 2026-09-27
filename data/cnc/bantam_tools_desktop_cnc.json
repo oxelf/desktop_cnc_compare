@@ -1,0 +1,78 @@
+{
+  "$schema": "../schema.json",
+  "name": "Bantam Tools Desktop CNC Milling Machine",
+  "company": "Bantam Tools",
+  "price": 6999,
+  "currency": "USD",
+  "image_url": "https://cdn.shopify.com/s/files/1/0275/2361/products/BantamToolsDesktopCNCMillingMachineBlackEditionHero__DSC3670.jpg?v=1662985339&width=1200",
+  "last_updated": "27.09.2026",
+  "stage": "discontinued",
+  "notes": "Still listed on bantamtools.com at USD 6,999 (CE International Edition USD 7,999) but both are sold out and cannot be ordered; ToolGuyd reported in Nov 2025 that Bantam Tools no longer sells CNC mills (no official statement). Stage set to discontinued on that basis; price is the last listed price. Dry milling only (no coolant). Conductive auto-probing in the Bantam software (automatic tool touch-off for tool length, stock location/thickness on conductive stock via the included probing pin). Feed = max traverse. 4th axis compatible (4th axis accessory no longer listed). Made in Peekskill, NY; ships fully assembled.",
+  "general": {
+    "machine_type": "mill",
+    "axis": 3,
+    "working_x": 178,
+    "working_y": 229,
+    "working_z": 83,
+    "enclosed": true,
+    "footprint_x": 503,
+    "footprint_y": 531,
+    "footprint_z": 493,
+    "weight": 36,
+    "accuracy": null,
+    "control_system": "proprietary",
+    "assembled": true,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": null,
+    "drive_system": null,
+    "linear_guides": null,
+    "feed": 6350,
+    "repeatability": 0.025
+  },
+  "spindle": {
+    "power": 250,
+    "cooling": null,
+    "system": "ER11",
+    "tools": 1,
+    "max_rpm": 28000,
+    "min_rpm": 10000,
+    "diameter": null,
+    "runout": null
+  },
+  "coolant": {
+    "mql": false,
+    "flood": false
+  },
+  "probe": {
+    "tool_length": true,
+    "z_probe": true,
+    "probe_3d": false
+  },
+  "media": {
+    "website": "https://bantamtools.com/products/bantam-tools-desktop-cnc-milling-machine",
+    "youtube": [
+      "https://www.youtube.com/watch?v=VHYM_QhZq5Y",
+      "https://www.youtube.com/watch?v=GErY2EJF3rg",
+      "https://www.youtube.com/watch?v=6EtMeqTdd28"
+    ],
+    "discord": null
+  },
+  "accessories": [
+    {
+      "name": "Bantam Tools Desktop CNC Fixturing Pallet (Alternative)",
+      "price": 269,
+      "image_url": "https://cdn.shopify.com/s/files/1/0275/2361/products/Desktop-CNC-Fixturing-Pallet.jpg?v=1742825658&width=1200",
+      "description": "11 x 9 x 0.75 in conductive fixturing plate with threaded pin holes that expands the work area (alternative version: logo in a different corner, one non-functioning mounting point).",
+      "url": "https://bantamtools.com/products/bantam-tools-desktop-cnc-fixturing-pallet-offspec"
+    },
+    {
+      "name": "Bantam Tools Desktop CNC Basic Vise",
+      "price": 116,
+      "image_url": "https://cdn.shopify.com/s/files/1/0275/2361/products/BeginnerViseonWood__DSC0035.jpg?v=1641479929&width=1200",
+      "description": "Aluminium vise for the T-slot bed or fixturing pallet, compatible with the software's automated probing routines.",
+      "url": "https://bantamtools.com/products/bantam-tools-desktop-cnc-beginners-vise"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "../schema.json",
+  "name": "CubiFab C1",
+  "company": "CubiFab",
+  "price": 1899,
+  "currency": "USD",
+  "image_url": "https://cdn.shopify.com/s/files/1/0699/5607/5568/files/banner_1.png?width=1200",
+  "last_updated": "27.09.2026",
+  "stage": "announced",
+  "notes": "Pre-launch: Kickstarter launch 'coming soon' (email sign-up only, first public demo at Maker Faire Bay Area Sep 2026). Price is the announced Super Early Bird 'starting from' USD 1,899; MSRP USD 2,999. Two versions: C1 250W (5,000-24,000 rpm) and C1 800W (9,000-18,000 rpm); values here are for the 250 W version, assumed to be the 'from' price (vendor does not map prices to versions). Working area with ATC installed; without ATC 300 x 200 x 150 mm. 14-tool ATC with RFID tool recognition, ER11 for 3.175/4/6 mm shanks. Tool probe (0.001 mm), 3D probe (<0.05 mm), 5 MP probing camera. x86 real-time controller. Optional rotary (cylindrical) machining. Maker: Cubivs Tech LLC.",
+  "general": {
+    "machine_type": "mill",
+    "axis": 3,
+    "working_x": 265,
+    "working_y": 200,
+    "working_z": 132,
+    "enclosed": true,
+    "footprint_x": 690,
+    "footprint_y": 540,
+    "footprint_z": 680,
+    "weight": 100,
+    "accuracy": 0.01,
+    "control_system": "proprietary",
+    "assembled": null,
+    "only_base": null
+  },
+  "motion": {
+    "motor_kind": "closed_loop_stepper",
+    "drive_system": "ballscrew",
+    "linear_guides": "linear_rails",
+    "feed": 5000,
+    "repeatability": 0.01
+  },
+  "spindle": {
+    "power": 250,
+    "cooling": "air",
+    "system": "ER11",
+    "tools": 14,
+    "max_rpm": 24000,
+    "min_rpm": 5000,
+    "diameter": null,
+    "runout": null
+  },
+  "coolant": {
+    "mql": null,
+    "flood": null
+  },
+  "probe": {
+    "tool_length": true,
+    "z_probe": null,
+    "probe_3d": true
+  },
+  "media": {
+    "website": "https://cubifab.com/",
+    "youtube": [],
+    "discord": null
+  },
+  "accessories": []
+}

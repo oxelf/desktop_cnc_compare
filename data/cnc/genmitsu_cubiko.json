@@ -1,0 +1,85 @@
+{
+  "$schema": "../schema.json",
+  "name": "Genmitsu Cubiko",
+  "company": "SainSmart (Genmitsu)",
+  "price": 583.09,
+  "currency": "EUR",
+  "image_url": "https://cdn.shopify.com/s/files/1/1978/9859/files/Cubiko-12001.png?v=1741315636&width=1200",
+  "last_updated": "27.09.2026",
+  "stage": "available",
+  "notes": "Price from the official German store de.sainsmart.com (tax included, regular price). The international store sainsmart.com currently lists it at USD 349 (sale, regular USD 499), also with an EU-plug variant. Launched via Kickstarter. Controls via PC (GRBL-compatible, e.g. Candle/UGS), Genmitsu app or built-in panel; USB/Wi-Fi; 32-bit MCU. Auto Z-probing with height-map auto-leveling for PCB milling; door interlock; approx. 60 dB with enclosure closed. Laser (5.5 W) and drawing modules sold separately; polishing module announced. Feed = max speed. Linear guides (round rods) taken from official product images.",
+  "general": {
+    "machine_type": "mill",
+    "axis": 3,
+    "working_x": 150,
+    "working_y": 110,
+    "working_z": 40,
+    "enclosed": true,
+    "footprint_x": 300,
+    "footprint_y": 335,
+    "footprint_z": 318,
+    "weight": 7.85,
+    "accuracy": 0.1,
+    "control_system": "grbl",
+    "assembled": true,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": "nema17",
+    "drive_system": "leadscrew",
+    "linear_guides": "rods",
+    "feed": 2000,
+    "repeatability": null
+  },
+  "spindle": {
+    "power": 75,
+    "cooling": null,
+    "system": "ER11",
+    "tools": 1,
+    "max_rpm": 10000,
+    "min_rpm": null,
+    "diameter": null,
+    "runout": null
+  },
+  "coolant": {
+    "mql": null,
+    "flood": null
+  },
+  "probe": {
+    "tool_length": null,
+    "z_probe": true,
+    "probe_3d": null
+  },
+  "media": {
+    "website": "https://de.sainsmart.com/products/cubiko",
+    "youtube": [
+      "https://www.youtube.com/watch?v=S_Lu2Lt2dQc",
+      "https://www.youtube.com/watch?v=7FXKEL1RedU",
+      "https://www.youtube.com/watch?v=-tWQKIr0IZc"
+    ],
+    "discord": "https://www.facebook.com/groups/SainSmart.GenmitsuCNC"
+  },
+  "accessories": [
+    {
+      "name": "CFL55-33 5.5 W Laser Module",
+      "price": 115.42,
+      "image_url": "https://cdn.shopify.com/s/files/1/0029/6838/7619/files/101-63-XCFL55-33_1.webp?v=1755252210",
+      "description": "5.5 W compressed-spot 445 nm diode laser module designed for the Cubiko and 3018/3020 series, no external power supply needed.",
+      "url": "https://de.sainsmart.com/products/cfl55-33"
+    },
+    {
+      "name": "CNC Drawing Robot / Pen Plotter Module",
+      "price": 40.45,
+      "image_url": "https://cdn.shopify.com/s/files/1/0029/6838/7619/files/101-63-DRT_1.webp?v=1770798707&width=1200",
+      "description": "Pen-holder attachment that turns the Cubiko into a drawing and handwriting machine.",
+      "url": "https://de.sainsmart.com/products/cnc-router-drawing-robot-tool"
+    },
+    {
+      "name": "Cubiko 4th Axis Rotary Attachment",
+      "price": null,
+      "image_url": "https://cdn.shopify.com/s/files/1/1978/9859/files/GA-4AXIS-CUBK01-5.jpg?v=1773828384&width=1200",
+      "description": "Rotary module with 42HS48 stepper, 4:1 reduction and chuck for stock up to 40 mm diameter; not in the EU store, listed at USD 149 (pre-order, ETD October) on sainsmart.com.",
+      "url": "https://www.sainsmart.com/products/cubiko-4th-axis"
+    }
+  ]
+}
