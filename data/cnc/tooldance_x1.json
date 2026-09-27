@@ -1,0 +1,63 @@
+{
+  "$schema": "../schema.json",
+  "name": "ToolDance X1",
+  "company": "ToolDance",
+  "price": 2799,
+  "currency": "USD",
+  "image_url": "https://cdn.shopify.com/s/files/1/1011/5173/6125/files/Group_62_7f505d4d-d244-4dc8-9d8a-dce2244bee38.png?width=1200",
+  "last_updated": "27.09.2026",
+  "stage": "announced",
+  "notes": "Pre-launch: Kickstarter campaign announced for October 2026. Price is the VIP price 'starting at' USD 2,799, secured with a refundable USD 30 deposit on tooldance.ai; Super Early Bird on Kickstarter USD 2,999; stated MSRP USD 5,999. 3-axis standard; optional 4-axis and simultaneous 5-axis modules (5-axis module is a development preview). Air blast is standard, flood coolant requires an optional module. 9-tool ATC plus 1 workpiece probe, RFID tool ID, tool shanks 4/6/8/10 mm (max cutter 18 mm, tool length 35-100 mm); holder system not specified. Feed = rapid traverse (rated cutting feed 3,000 mm/min). Motors: NEMA 23 steppers with 14-bit absolute encoders and closed-loop FOC. Spindle 1.5 kW S1 PMSM, runout <=10 um @ 45 mm. Spindle camera + line laser for stock/fixture recognition.",
+  "general": {
+    "machine_type": "mill",
+    "axis": 3,
+    "working_x": 400,
+    "working_y": 265,
+    "working_z": 180,
+    "enclosed": true,
+    "footprint_x": 750,
+    "footprint_y": 625,
+    "footprint_z": 772,
+    "weight": 100,
+    "accuracy": 0.01,
+    "control_system": "proprietary",
+    "assembled": null,
+    "only_base": null
+  },
+  "motion": {
+    "motor_kind": "closed_loop_stepper",
+    "drive_system": "ballscrew",
+    "linear_guides": null,
+    "feed": 5000,
+    "repeatability": 0.01
+  },
+  "spindle": {
+    "power": 1500,
+    "cooling": "air",
+    "system": null,
+    "tools": 9,
+    "max_rpm": 24000,
+    "min_rpm": null,
+    "diameter": null,
+    "runout": 0.01
+  },
+  "coolant": {
+    "mql": null,
+    "flood": false
+  },
+  "probe": {
+    "tool_length": null,
+    "z_probe": null,
+    "probe_3d": true
+  },
+  "media": {
+    "website": "https://tooldance.ai/",
+    "youtube": [
+      "https://www.youtube.com/watch?v=5BGWG5aPGbQ",
+      "https://www.youtube.com/watch?v=2nwuljx3nQc",
+      "https://www.youtube.com/watch?v=FVTrqpI6dkA"
+    ],
+    "discord": "https://discord.com/invite/MTZ4pmxAxT"
+  },
+  "accessories": []
+}

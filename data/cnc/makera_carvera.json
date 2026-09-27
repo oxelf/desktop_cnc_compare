@@ -1,0 +1,85 @@
+{
+  "$schema": "../schema.json",
+  "name": "Makera Carvera",
+  "company": "Makera",
+  "price": 5249.0,
+  "currency": "EUR",
+  "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/2_4bb1dd31-e697-4786-87f7-7e1b943f2e3a.jpg?v=1775113858&width=1200",
+  "last_updated": "27.09.2026",
+  "stage": "available",
+  "notes": "EU store price (5th-anniversary sale; regular €5,849). Includes 6-tool ATC, wireless probe, automatic tool-length calibration, integrated 2.5 W laser and internal dust collection (0.8 l tank). Guides are mixed: X/Z 15 mm linear rails, Y 25 mm hardened rods; ball screws on all axes; servo motors on X/Y/Z. Accuracy = stated resolution. Custom collet (1/8\" standard; 1/4\", 6, 4, 3 mm optional). Supports external air assist. Optional 4th axis (Ø92 × 240 mm).",
+  "general": {
+    "machine_type": "mill",
+    "axis": 3,
+    "working_x": 360.0,
+    "working_y": 240.0,
+    "working_z": 140.0,
+    "enclosed": true,
+    "footprint_x": 580.0,
+    "footprint_y": 520.0,
+    "footprint_z": 540.0,
+    "weight": 50.0,
+    "accuracy": 0.01,
+    "control_system": "smoothieware",
+    "assembled": true,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": "servo",
+    "drive_system": "ballscrew",
+    "linear_guides": "linear_rails",
+    "feed": 6000,
+    "repeatability": null
+  },
+  "spindle": {
+    "power": 200,
+    "cooling": "air",
+    "system": "proprietary",
+    "tools": 6,
+    "max_rpm": 15000,
+    "min_rpm": 0,
+    "diameter": null,
+    "runout": 0.01
+  },
+  "coolant": {
+    "mql": false,
+    "flood": false
+  },
+  "probe": {
+    "tool_length": true,
+    "z_probe": true,
+    "probe_3d": null
+  },
+  "media": {
+    "website": "https://eu.makera.com/de/products/carvera",
+    "youtube": [
+      "https://www.youtube.com/watch?v=EhNmVsl2a50",
+      "https://www.youtube.com/watch?v=e1AcpqRggh0",
+      "https://www.youtube.com/watch?v=heNXa-TAoh0"
+    ],
+    "discord": "https://discord.com/invite/NQ5r9jGNXV"
+  },
+  "accessories": [
+    {
+      "name": "Carvera 4th Axis Module Harmonic Drive",
+      "price": 599.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/c1956627d070a09107d05dbd72a1b0cf_a5c67288-64e2-473e-a6da-483a0e5660ca.jpg?v=1765873272&width=1200",
+      "description": "Harmonic-drive rotary module with 4th-axis homing for simultaneous 4-axis machining (Ø92 × 240 mm).",
+      "url": "https://eu.makera.com/de/products/carvera-4th-axis-module"
+    },
+    {
+      "name": "Makera Cyclone Dust Collector",
+      "price": 619.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/20260509-155737_750839d3-c4fc-4727-98c6-fd6422382eb3.png?v=1778324481&width=1200",
+      "description": "Full-size cyclone dust collector with automated control for long, continuous milling jobs.",
+      "url": "https://eu.makera.com/de/products/makera-cyclone-dust-collector"
+    },
+    {
+      "name": "Makera Fixture Set for Carvera & Carvera Air",
+      "price": 89.98,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/FixtureSet_c2d92e11-3d6c-4c46-98e6-77ffe38d7296.jpg?v=1767668169&width=1200",
+      "description": "Two side clamps and a thick L-bracket for holding workpieces thicker than 2 cm.",
+      "url": "https://eu.makera.com/de/products/makera-fixture-set"
+    }
+  ]
+}

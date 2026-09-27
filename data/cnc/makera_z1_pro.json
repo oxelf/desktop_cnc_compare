@@ -1,0 +1,113 @@
+{
+  "$schema": "../schema.json",
+  "name": "Makera Z1 Pro",
+  "company": "Makera",
+  "price": 1499.0,
+  "currency": "EUR",
+  "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/8_7fcb03fc-ce92-4f5d-87cb-724fa3e9de58.jpg?v=1778571347&width=1200",
+  "last_updated": "27.09.2026",
+  "stage": "preorder",
+  "notes": "EU store pre-order price for the Z1 Pro Standalone (regular €1,599; Makera announces an MSRP increase of €200 from 1 Oct 2026); current batch ships from the factory in 5-10 business days. Same chassis as the Z1, but NEMA 17 closed-loop steppers (detect overload/position deviation and halt) and ball screws instead of Acme lead screws; image shows the shared Z1 chassis. Weight 17 kg per spec table (quick-start guide: ~20 kg net). Accuracy = stated resolution 0.02 mm; repeatability 0.002 mm per vendor FAQ (Z1 family). Custom quick-change collet (1/8\" standard). Wired Z probe included; the included 3D probe rod works on conductive stock only. Optional 4th axis (Ø80 × 150 mm) and 5 W laser.",
+  "general": {
+    "machine_type": "mill",
+    "axis": 3,
+    "working_x": 200.0,
+    "working_y": 200.0,
+    "working_z": 100.0,
+    "enclosed": true,
+    "footprint_x": 350.0,
+    "footprint_y": 470.0,
+    "footprint_z": 450.0,
+    "weight": 17.0,
+    "accuracy": 0.02,
+    "control_system": "smoothieware",
+    "assembled": true,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": "closed_loop_stepper",
+    "drive_system": "ballscrew",
+    "linear_guides": "linear_rails",
+    "feed": 2000,
+    "repeatability": 0.002
+  },
+  "spindle": {
+    "power": 150,
+    "cooling": "air",
+    "system": "proprietary",
+    "tools": 1,
+    "max_rpm": 13000,
+    "min_rpm": 0,
+    "diameter": null,
+    "runout": 0.01
+  },
+  "coolant": {
+    "mql": false,
+    "flood": false
+  },
+  "probe": {
+    "tool_length": true,
+    "z_probe": true,
+    "probe_3d": false
+  },
+  "media": {
+    "website": "https://eu.makera.com/de/products/makera-z1-desktop-cnc?variant=53397815001387",
+    "youtube": [
+      "https://www.youtube.com/watch?v=wb6Y35UE6Ys",
+      "https://www.youtube.com/watch?v=5Uxcc-Ku_M0",
+      "https://www.youtube.com/watch?v=Z6iT_2oHvhA"
+    ],
+    "discord": "https://discord.com/invite/NQ5r9jGNXV"
+  },
+  "accessories": [
+    {
+      "name": "Makera Z1 4th Axis Module",
+      "price": 269.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/42fa5eddc491c5faa0e75b468d5a8eee_d2940d06-1b80-48f8-bf16-97cd342829a8.jpg?v=1780641283&width=1200",
+      "description": "Belt-driven rotary module for the Z1 (Ø80 × 150 mm) for cylindrical and multi-sided parts.",
+      "url": "https://eu.makera.com/de/products/makera-z1-4th-axis-module"
+    },
+    {
+      "name": "Makera Z1 Laser Module",
+      "price": 139.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/0353f7a58e13e30b33b0484170832355_58d529c8-4600-47f5-a9b6-fd3de1d31a1d.jpg?v=1780641283&width=1200",
+      "description": "5 W 445 nm diode laser head that installs like a milling bit, for engraving.",
+      "url": "https://eu.makera.com/de/products/makera-z1-laser-module"
+    },
+    {
+      "name": "Makera 3D Wired Probe",
+      "price": 89.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/5f0851991d11c4f27f4aa50d084cf703.jpg?v=1780641282&width=1200",
+      "description": "3D touch probe for edge, centre and surface finding on metal and non-metal workpieces.",
+      "url": "https://eu.makera.com/de/products/makera-3d-wired-probe"
+    },
+    {
+      "name": "Makera Cyclone Dust Collector Lite",
+      "price": 359.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/d607457645dfc036ec01c5305f40d7fd.jpg?v=1780641283&width=1200",
+      "description": "Compact cyclone dust collector with automated machine control; the recommended extractor for the Z1.",
+      "url": "https://eu.makera.com/de/products/dust-collector-lite"
+    },
+    {
+      "name": "Makera Cyclone Dust Collector",
+      "price": 619.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/20260509-155737_750839d3-c4fc-4727-98c6-fd6422382eb3.png?v=1778324481&width=1200",
+      "description": "Full-size cyclone dust collector with automated control for long, continuous milling jobs.",
+      "url": "https://eu.makera.com/de/products/makera-cyclone-dust-collector"
+    },
+    {
+      "name": "Makera Z1 Vacuum Bed",
+      "price": 109.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/e765cdb9399bed2cbdf0fd709581441a.jpg?v=1780641282&width=1200",
+      "description": "Vacuum workholding bed for flat stock; requires a Makera Cyclone Dust Collector (Standard or Lite).",
+      "url": "https://eu.makera.com/de/products/makera-z1-vacuum-bed"
+    },
+    {
+      "name": "Makera Z1 Low-Profile Vise",
+      "price": 89.0,
+      "image_url": "https://cdn.shopify.com/s/files/1/0969/4078/5963/files/400e3bf32ba8f4b2c58def18e720b7d0.jpg?v=1780641282&width=1200",
+      "description": "Low-profile side-clamping vise that keeps the top surface free and raises stock for through-cuts.",
+      "url": "https://eu.makera.com/de/products/makera-z1-low-profile-vise"
+    }
+  ]
+}

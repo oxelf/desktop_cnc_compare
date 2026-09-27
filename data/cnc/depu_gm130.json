@@ -1,0 +1,58 @@
+{
+  "$schema": "../schema.json",
+  "name": "DEPU GM130",
+  "company": "DEPU",
+  "price": null,
+  "image_url": "https://b.kickoffpages.com/assets/158630/2ca99474-ba72-42e3-a7ec-31f459e2c8c6/ic85ek0zg9swlol2ft8u/26.jpg",
+  "last_updated": "27.09.2026",
+  "stage": "announced",
+  "notes": "Pre-launch: 'Launching soon on Kickstarter' (sign-up page only, no price disclosed). Desktop simultaneous 5-axis mill with A/C trunnion (A +90/-90 deg on the campaign page, +/-130 deg on depu.com; C continuous 360 deg), table dia. 130 mm, max workpiece dia. 130 x 100 mm, max load 10 kg. Working area = X/Y/Z travel. Feed = rapid traverse (cutting feed 0-8 m/min). Spindle 3 kW (100% ED), phi80 water-cooled, ISO20, 6-tool ATC (depu.com also mentions 40,000 rpm max; the spec table says 24,000 rpm). Weight and dimensions only from depu.com/GM130, which shows an earlier design render. Integrated cooling system (type not specified). Proprietary DEPU CNC system with Chuixiang AI CAM.",
+  "general": {
+    "machine_type": "mill",
+    "axis": 5,
+    "working_x": 300,
+    "working_y": 140,
+    "working_z": 140,
+    "enclosed": true,
+    "footprint_x": 750,
+    "footprint_y": 820,
+    "footprint_z": 970,
+    "weight": 150,
+    "accuracy": 0.01,
+    "control_system": "proprietary",
+    "assembled": null,
+    "only_base": null
+  },
+  "motion": {
+    "motor_kind": null,
+    "drive_system": null,
+    "linear_guides": null,
+    "feed": 10000,
+    "repeatability": 0.005
+  },
+  "spindle": {
+    "power": 3000,
+    "cooling": "water",
+    "system": "ISO20",
+    "tools": 6,
+    "max_rpm": 24000,
+    "min_rpm": null,
+    "diameter": 80,
+    "runout": null
+  },
+  "coolant": {
+    "mql": null,
+    "flood": null
+  },
+  "probe": {
+    "tool_length": null,
+    "z_probe": null,
+    "probe_3d": null
+  },
+  "media": {
+    "website": "https://gm130.depu.com/",
+    "youtube": [],
+    "discord": null
+  },
+  "accessories": []
+}

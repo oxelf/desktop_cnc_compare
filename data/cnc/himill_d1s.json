@@ -1,0 +1,113 @@
+{
+  "$schema": "../schema.json",
+  "name": "HiMill D1S",
+  "company": "Maxmake",
+  "price": 988.95,
+  "currency": "EUR",
+  "image_url": "https://cdn.shopify.com/s/files/1/0625/1603/5668/files/MAXMAKE_HiMill_D1S_-_Pro_Desktop_CNC_with_Ball_Screws_QTC.webp?v=1788768884&width=1200",
+  "last_updated": "27.09.2026",
+  "stage": "available",
+  "notes": "Official store price for Germany in EUR incl. duties/VAT (DDP; converted from USD 1,104, list USD 1,299; autumn sale until 30 Sep 2026). D1S vs D1: 250 W brushless spindle with lever-lock quick tool change (QTC) and proprietary precision collet (1/8\" standard; 4 mm, 1/4\", 6 mm via collet kit), ball screws instead of anti-backlash lead screws, linear rail on Z (X/Y hardened shafts), ±0.02 mm accuracy and <0.01 mm runout. Weight 17.8 kg per spec table (FAQ: 19 kg). Integrated automatic tool setter; 3D probe, 10 W laser and 4th axis (Ø50 × 159 mm) optional. Stepper motors, size not stated. Controlled via Maxmake's own MaxmakeLAB software/firmware.",
+  "general": {
+    "machine_type": "mill",
+    "axis": 3,
+    "working_x": 280.0,
+    "working_y": 200.0,
+    "working_z": 80.0,
+    "enclosed": true,
+    "footprint_x": 452.0,
+    "footprint_y": 425.0,
+    "footprint_z": 350.0,
+    "weight": 17.8,
+    "accuracy": 0.02,
+    "control_system": "proprietary",
+    "assembled": true,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": null,
+    "drive_system": "ballscrew",
+    "linear_guides": "rods",
+    "feed": 1000,
+    "repeatability": 0.01
+  },
+  "spindle": {
+    "power": 250,
+    "cooling": "air",
+    "system": "proprietary",
+    "tools": 1,
+    "max_rpm": 13000,
+    "min_rpm": 0,
+    "diameter": null,
+    "runout": 0.01
+  },
+  "coolant": {
+    "mql": null,
+    "flood": null
+  },
+  "probe": {
+    "tool_length": true,
+    "z_probe": false,
+    "probe_3d": false
+  },
+  "media": {
+    "website": "https://maxmake.com/products/himill-d1s",
+    "youtube": [
+      "https://www.youtube.com/watch?v=NWi_8fS96RM",
+      "https://www.youtube.com/watch?v=TsZgOtS98dU",
+      "https://www.youtube.com/watch?v=lbr8Waaj32k"
+    ],
+    "discord": "https://discord.gg/u9XkszV3Mj"
+  },
+  "accessories": [
+    {
+      "name": "3D Probe",
+      "price": 75.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0625/1603/5668/files/sanD_1_1.jpg?v=1758856481&width=1200",
+      "description": "±X/±Y/±Z touch probe (<0.01 mm repeatability) for auto zeroing, edge finding and surface mapping.",
+      "url": "https://maxmake.com/products/3d-probe"
+    },
+    {
+      "name": "10W Laser Module",
+      "price": 173.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0625/1603/5668/files/10W_Laser_Module.png?v=1790146075&width=1200",
+      "description": "10 W 450 nm diode laser module that turns the HiMill D1/D1S into a laser engraver and cutter.",
+      "url": "https://maxmake.com/products/10w-laser-module"
+    },
+    {
+      "name": "4th Axis Module",
+      "price": 242.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0625/1603/5668/files/4th_Axis_Module.png?v=1790145820&width=1200",
+      "description": "1:5 reduction rotary axis (up to Ø50 × 159 mm) for rotary and multi-sided machining on the D1/D1S.",
+      "url": "https://maxmake.com/products/4th-axis-module"
+    },
+    {
+      "name": "Collet Kit (D1S only)",
+      "price": 71.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0625/1603/5668/files/himill-d1s-collet-adapter-kit.jpg?v=1778566222&width=1200",
+      "description": "6 mm collet with 6-4 mm and 6-3.175 mm adapters and removal wrench for the D1S quick-change spindle (not for the D1).",
+      "url": "https://maxmake.com/products/collet-kit"
+    },
+    {
+      "name": "Vacuum Platform Module",
+      "price": 75.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0625/1603/5668/files/maxmake-vacuum-adsorption-platform-main.webp?v=1779777265&width=1200",
+      "description": "Vacuum table for holding thin sheet material; includes a basic starter air pump.",
+      "url": "https://maxmake.com/products/vacuum-suction-platform"
+    },
+    {
+      "name": "Flat-jaw Clamping Module",
+      "price": 62.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0625/1603/5668/files/1-52.jpg?v=1769999143&width=1200",
+      "description": "Flat-jaw vise that clamps stock from the side so the machining path stays clear.",
+      "url": "https://maxmake.com/products/flat-jaw-clamping-module"
+    },
+    {
+      "name": "Side Clamp Module (2pcs)",
+      "price": 62.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0625/1603/5668/files/20251024-164148.jpg?v=1769476747&width=1200",
+      "description": "Pair of side clamps that hold stock from the side and free the full top surface.",
+      "url": "https://maxmake.com/products/frog-wrench"
+    }
+  ]
+}

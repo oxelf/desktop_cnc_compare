@@ -1,0 +1,92 @@
+{
+  "$schema": "../schema.json",
+  "name": "Twotrees ED1",
+  "company": "Twotrees",
+  "price": 2058.95,
+  "currency": "EUR",
+  "image_url": "https://cdn.shopify.com/s/files/1/0928/2859/8586/files/ED1_2_a13c76ba-ae8e-42b0-a11b-a76d29302cec.jpg?v=1790057496&width=1200",
+  "last_updated": "27.09.2026",
+  "stage": "preorder",
+  "notes": "EU store pre-order price, Standard package (Super Early Bird tier = USD 2,299; announced to rise to USD 2,399 after 28 Sep 2026; strike-through price €3,939.95). Full payment required, shipping from November 2026; the store does not state that VAT/import duties are included. All-in-One package (€2,416.95) adds 4th axis, vise and edge finder. Footprint depth 630 mm with touchscreen unfolded (557 mm folded). Max acceleration 200 mm/s². Spindle cooling and collet type not specified. Optional 10 W quick-change laser module mentioned but not yet listed in the store.",
+  "general": {
+    "machine_type": "mill",
+    "axis": 3,
+    "working_x": 300.0,
+    "working_y": 200.0,
+    "working_z": 120.0,
+    "enclosed": true,
+    "footprint_x": 630.0,
+    "footprint_y": 510.0,
+    "footprint_z": 525.0,
+    "weight": 38.0,
+    "accuracy": 0.01,
+    "control_system": "grbl",
+    "assembled": null,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": null,
+    "drive_system": "ballscrew",
+    "linear_guides": "linear_rails",
+    "feed": 3000,
+    "repeatability": null
+  },
+  "spindle": {
+    "power": 600,
+    "cooling": null,
+    "system": null,
+    "tools": 5,
+    "max_rpm": 18000,
+    "min_rpm": 0,
+    "diameter": null,
+    "runout": null
+  },
+  "coolant": {
+    "mql": null,
+    "flood": null
+  },
+  "probe": {
+    "tool_length": true,
+    "z_probe": true,
+    "probe_3d": false
+  },
+  "media": {
+    "website": "https://eu.twotrees3d.com/products/twotrees-ed1-cnc-router-machine",
+    "youtube": [
+      "https://www.youtube.com/watch?v=cE9MsG6lXyg",
+      "https://www.youtube.com/watch?v=qKX5ctVXgDg",
+      "https://www.youtube.com/watch?v=cjaGWU1_HlE"
+    ],
+    "discord": null
+  },
+  "accessories": [
+    {
+      "name": "Twotrees 4th Axis CNC Rotary Module Kit for ED1",
+      "price": 446.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0928/2859/8586/files/4th_axis.jpg?v=1788948947&width=1200",
+      "description": "Harmonic-reducer rotary axis (max Ø50 × 100 mm) for cylindrical and multi-sided machining; pre-sale.",
+      "url": "https://eu.twotrees3d.com/products/twotrees-4th-axis-cnc-rotary-module-kit-for-ed1"
+    },
+    {
+      "name": "Twotrees Dust Collector M3 for ED1",
+      "price": 446.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0928/2859/8586/files/DustCollector_65320ee5-1a3e-4aaa-a7d8-a82564595416.jpg?v=1788949061&width=1200",
+      "description": "External dust collector with adjustable airflow that captures chips at the source; pre-sale.",
+      "url": "https://eu.twotrees3d.com/products/pre-sale-twotrees-dust-collector-for-ed1"
+    },
+    {
+      "name": "Twotrees 3D Wired Probe for ED1",
+      "price": 79.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0928/2859/8586/files/3DWiredProbe.jpg?v=1788948985&width=1200",
+      "description": "Wired 3D probe that locates workpiece edges and centres to 0.01 mm; pre-sale.",
+      "url": "https://eu.twotrees3d.com/products/pre-sale-twotrees-3d-wired-probe-for-ed1"
+    },
+    {
+      "name": "Twotrees Aluminum Vise Bench Clamp for ED1",
+      "price": 79.95,
+      "image_url": "https://cdn.shopify.com/s/files/1/0928/2859/8586/files/ViseBench.jpg?v=1788949014&width=1200",
+      "description": "Rigid aluminium vise with up to 200 × 120 mm clamping range for tight-tolerance parts; pre-sale.",
+      "url": "https://eu.twotrees3d.com/products/pre-sale-twotrees-aluminum-vise-bench-clamp-for-ed1"
+    }
+  ]
+}

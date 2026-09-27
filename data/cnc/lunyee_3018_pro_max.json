@@ -1,11 +1,14 @@
 {
+  "$schema": "../schema.json",
   "name": "Lunyee 3018 Pro Max",
   "company": "Lunyee",
   "price": 399.0,
+  "currency": "EUR",
   "image_url": "https://www.lunyeecnc.com/cdn/shop/files/3018-pro-max_1.jpg?v=1766107104&width=1206",
   "last_updated": "26.09.2026",
   "stage": "available",
   "general": {
+    "machine_type": "mill",
     "working_x": 300.0,
     "working_y": 180.0,
     "working_z": 80.0,
@@ -50,5 +53,6 @@
     "website": "https://www.lunyeecnc.com/de/products/lunyee-3018-pro-max-cnc-router-laser-2-in-1-machine?variant=43274823696524",
     "youtube": [],
     "discord": null
-  }
+  },
+  "accessories": []
 }

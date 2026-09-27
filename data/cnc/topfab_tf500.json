@@ -1,0 +1,77 @@
+{
+  "$schema": "../schema.json",
+  "name": "TOPFAB TF500",
+  "company": "TOPFAB",
+  "price": 5999,
+  "currency": "USD",
+  "image_url": "https://www.topfab.com/cdn/shop/files/preview_images/6e0d1a7a2e08356176743c61f72e0632_1500x.png?v=1785485689",
+  "last_updated": "27.09.2026",
+  "stage": "discontinued",
+  "notes": "Kickstarter campaign (launched 26.08.2026, HK-based, pledges in HKD) was canceled by TOPFAB in early Sep 2026 citing export-control rules for 5-axis CNC; no relaunch announced. Price = last listed Basic Pack Super Early Bird, creator-stated US$5,999 (HK$47,092; incl. basic tooling package); announced MSRP US$8,999. A-axis -110°/+110°, C-axis 360°, max workpiece Ø120 × 100 mm, 5-axis RTCP accuracy 0.05 mm, A/C repeatability 5 arcsec. Spindle 0.65 kW max for 4/6 mm shanks, thermoelectric (semiconductor) cooling; 8-slot random-access ATC with vision tool ID, stereo-vision workpiece positioning, closed-loop position sensing. Machine rated power 1.5 kW.",
+  "general": {
+    "machine_type": "mill",
+    "axis": 5,
+    "working_x": 130,
+    "working_y": 170,
+    "working_z": 130,
+    "enclosed": true,
+    "footprint_x": 610,
+    "footprint_y": 530,
+    "footprint_z": 504,
+    "weight": 90,
+    "accuracy": 0.005,
+    "control_system": null,
+    "assembled": null,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": null,
+    "drive_system": null,
+    "linear_guides": null,
+    "feed": 6000,
+    "repeatability": 0.005
+  },
+  "spindle": {
+    "power": 650,
+    "cooling": null,
+    "system": null,
+    "tools": 8,
+    "max_rpm": 60000,
+    "min_rpm": null,
+    "diameter": null,
+    "runout": null
+  },
+  "coolant": {
+    "mql": null,
+    "flood": null
+  },
+  "probe": {
+    "tool_length": null,
+    "z_probe": null,
+    "probe_3d": null
+  },
+  "media": {
+    "website": "https://store.topfab3d.com/pages/tf500b",
+    "youtube": [
+      "https://www.youtube.com/watch?v=S2zGPOQMWOg",
+      "https://www.youtube.com/watch?v=xktNMs7j4rU"
+    ],
+    "discord": "https://www.facebook.com/groups/2859673101046514"
+  },
+  "accessories": [
+    {
+      "name": "Dust Collector",
+      "price": 49,
+      "image_url": null,
+      "description": "Handheld vacuum for collecting dust and machining debris (campaign add-on).",
+      "url": "https://www.kickstarter.com/projects/topfab/topfab-tf500-5-axis-ai-cnc-your-desktop-your-fabrication"
+    },
+    {
+      "name": "Material Clamps (1 pair)",
+      "price": 89,
+      "image_url": null,
+      "description": "Workholding clamp jaws for securing stock during machining (campaign add-on).",
+      "url": "https://www.kickstarter.com/projects/topfab/topfab-tf500-5-axis-ai-cnc-your-desktop-your-fabrication"
+    }
+  ]
+}

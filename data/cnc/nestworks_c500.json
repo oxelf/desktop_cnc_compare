@@ -1,0 +1,63 @@
+{
+  "$schema": "../schema.json",
+  "name": "NestWorks C500",
+  "company": "NestWorks",
+  "price": 2799.0,
+  "currency": "USD",
+  "image_url": "https://www.nestworks.ai/images/product/C500/feature-stability.webp",
+  "last_updated": "27.09.2026",
+  "stage": "preorder",
+  "notes": "No live price: USD 2,799 (+ shipping) was the Kickstarter Standard package pledge (campaign ended Dec 2025, All-in-One USD 3,999; late pledges closed). The official site now shows 'Pre-Order', but its store is not open yet. Estimated MSRP USD 4,699. Working area 240 × 210 mm without ATC; with ATC 207 × 210 mm (X-ATC) or 240 × 160 mm (Y-ATC) per spec table (FAQ says 157 × 210 / 240 × 95 mm). Z travel 132 mm. Repeatability ±0.01 mm (spec table; FAQ ±0.008 mm). Drawbar spindle with RFID tool holders (1/8\"-1/4\" shanks, adaptive collets), 3D probe, tool setter, laser height sensor, 5 MP probing camera, MQL and auger chip evacuation, IP54. Optional 4th axis (Ø95 mm).",
+  "general": {
+    "machine_type": "mill",
+    "axis": 3,
+    "working_x": 240.0,
+    "working_y": 210.0,
+    "working_z": 132.0,
+    "enclosed": true,
+    "footprint_x": 550.0,
+    "footprint_y": 615.0,
+    "footprint_z": 745.0,
+    "weight": 120.0,
+    "accuracy": 0.02,
+    "control_system": null,
+    "assembled": null,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": "closed_loop_stepper",
+    "drive_system": "ballscrew",
+    "linear_guides": "linear_rails",
+    "feed": 5000,
+    "repeatability": 0.01
+  },
+  "spindle": {
+    "power": 800,
+    "cooling": "air",
+    "system": null,
+    "tools": 5,
+    "max_rpm": 18000,
+    "min_rpm": 9000,
+    "diameter": null,
+    "runout": 0.01
+  },
+  "coolant": {
+    "mql": true,
+    "flood": null
+  },
+  "probe": {
+    "tool_length": true,
+    "z_probe": true,
+    "probe_3d": true
+  },
+  "media": {
+    "website": "https://www.nestworks.ai/product/c500",
+    "youtube": [
+      "https://www.youtube.com/watch?v=fkRDk68YT3A",
+      "https://www.youtube.com/watch?v=GYmuXTlQczU",
+      "https://www.youtube.com/watch?v=Dttqhqcfd6U"
+    ],
+    "discord": null
+  },
+  "accessories": []
+}

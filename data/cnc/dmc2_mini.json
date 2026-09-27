@@ -1,0 +1,85 @@
+{
+  "$schema": "../schema.json",
+  "name": "DMC2 Mini",
+  "company": "Shariff DMC",
+  "price": 2500,
+  "currency": "USD",
+  "image_url": "https://shariffdmc.com/wp-content/uploads/2024/08/DSC00160-1024x683.jpg",
+  "last_updated": "27.09.2026",
+  "stage": "available",
+  "notes": "Price is the DIY kit (sale price, regular USD 2,700; CAD pricing also offered); the assembled machine is USD 4,500 (regular 4,800) and currently out of stock. Kit includes coolant and lubrication system, 15-piece ER20 collet set and all electronics (no computer or fluids); estimated 20 h build. Ships from Canada; non-North-American buyers need a shipping quote. Accuracy = vendor-stated achievable part tolerance / motor accuracy (0.01 mm, not guaranteed for a kit). Feed = max rapid. Includes Mach3 controller board; can be swapped for LinuxCNC or GRBL. X/Y/Z automatic probing with an included probe. Travel converted from 12 x 7 x 5.5 in; footprint excludes the extra 3 in for motors. 4th axis optional.",
+  "general": {
+    "machine_type": "mill",
+    "axis": 3,
+    "working_x": 305,
+    "working_y": 178,
+    "working_z": 140,
+    "enclosed": true,
+    "footprint_x": 508,
+    "footprint_y": 508,
+    "footprint_z": 686,
+    "weight": 50,
+    "accuracy": 0.01,
+    "control_system": "mach3",
+    "assembled": false,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": "closed_loop_stepper",
+    "drive_system": "ballscrew",
+    "linear_guides": "linear_rails",
+    "feed": 10000,
+    "repeatability": null
+  },
+  "spindle": {
+    "power": 2200,
+    "cooling": null,
+    "system": "ER20",
+    "tools": 1,
+    "max_rpm": 24000,
+    "min_rpm": null,
+    "diameter": null,
+    "runout": null
+  },
+  "coolant": {
+    "mql": null,
+    "flood": true
+  },
+  "probe": {
+    "tool_length": null,
+    "z_probe": null,
+    "probe_3d": true
+  },
+  "media": {
+    "website": "https://shariffdmc.com/product/dmc2-mini-cnc/",
+    "youtube": [
+      "https://www.youtube.com/watch?v=jDsC2H301bM",
+      "https://www.youtube.com/watch?v=7mkSOxQChM4",
+      "https://www.youtube.com/watch?v=Vuryvs3-DdE"
+    ],
+    "discord": null
+  },
+  "accessories": [
+    {
+      "name": "Shariff DMC 4th Axis",
+      "price": 700,
+      "image_url": "https://shariffdmc.com/wp-content/uploads/2024/09/20240902_153050-1024x478.jpg",
+      "description": "4th-axis add-on for the DMC2 Mini/DMC2 with 4-jaw chuck, belt reducer, closed-loop motor, homing sensor, driver and wiring (some assembly required).",
+      "url": "https://shariffdmc.com/product/4-axis-addon/"
+    },
+    {
+      "name": "MPG Jogwheel",
+      "price": 95,
+      "image_url": "https://shariffdmc.com/wp-content/uploads/2024/08/MPG-handwheel-1.jpg",
+      "description": "Plug-and-play Mach3 handwheel pendant with 0.01/0.1/1 mm jog increments and magnetic back for probing and positioning.",
+      "url": "https://shariffdmc.com/product/mpg-jogwheel/"
+    },
+    {
+      "name": "4″ Precision Ground Vise",
+      "price": 95,
+      "image_url": "https://shariffdmc.com/wp-content/uploads/2024/08/download-12.jpg",
+      "description": "Precision-ground vise with 4 in opening and approx. 2.9 in jaw width, incl. mounting hardware.",
+      "url": "https://shariffdmc.com/product/4-precision-ground-vise/"
+    }
+  ]
+}

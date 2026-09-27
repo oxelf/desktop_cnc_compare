@@ -1,0 +1,126 @@
+{
+  "$schema": "../schema.json",
+  "name": "SineCore SC-512L CNC Lathe",
+  "company": "SineCore CNC",
+  "price": 6199,
+  "currency": "USD",
+  "image_url": "https://cdn.shopify.com/s/files/1/0788/6766/1083/files/Studio-Template.54.jpg?v=1771896104&width=1200",
+  "last_updated": "27.09.2026",
+  "stage": "available",
+  "notes": "Kickstarter campaign funded (71 backers, $382,730); now sold via the vendor store (USD, excl. sales tax, US shipping flat $400). Base machine $6,199 (list $7,500) is currently sold out and on preorder, shipping from Feb 2027; the Pro Package ($8,899: ATC, live tool, tool probe, tailstock, flood coolant, jog pendant) is in stock. Base includes 5\" 3-jaw chuck, quick-change tool post with 2 holders and a Mach4 license; values here describe the base machine. Accuracy/repeatability stated as 0.005-0.020 mm (upper bound used). Max part length with tailstock 375 mm. Swing is listed as 235 mm in the spec table and 250 mm in the vendor's comparison table. Main 1.2 kW servo spindle also indexes for live-tool milling/drilling. Requires a Windows PC; 220-240 V (110 V via optional step-up transformer).",
+  "general": {
+    "machine_type": "lathe",
+    "axis": 2,
+    "working_x": 178,
+    "working_y": null,
+    "working_z": 375,
+    "enclosed": true,
+    "footprint_x": 1068,
+    "footprint_y": 665,
+    "footprint_z": 574,
+    "weight": 99.8,
+    "accuracy": 0.02,
+    "control_system": "mach4",
+    "assembled": true,
+    "only_base": false
+  },
+  "lathe": {
+    "swing_diameter": 235,
+    "turning_length": 273,
+    "spindle_bore": 26,
+    "live_tooling": false
+  },
+  "motion": {
+    "motor_kind": "closed_loop_stepper",
+    "drive_system": "ballscrew",
+    "linear_guides": "linear_rails",
+    "feed": 5000,
+    "repeatability": 0.02
+  },
+  "spindle": {
+    "power": 1200,
+    "cooling": null,
+    "system": "3-jaw chuck",
+    "tools": 1,
+    "max_rpm": 3000,
+    "min_rpm": null,
+    "diameter": null,
+    "runout": null
+  },
+  "coolant": {
+    "mql": null,
+    "flood": false
+  },
+  "probe": {
+    "tool_length": false,
+    "z_probe": null,
+    "probe_3d": null
+  },
+  "media": {
+    "website": "https://sinecorecnc.com/products/sc-512-lathe-machine-only",
+    "youtube": [
+      "https://www.youtube.com/watch?v=7mvLTeJ27ww",
+      "https://www.youtube.com/watch?v=sXCQX72bWR8",
+      "https://www.youtube.com/watch?v=86CKUj4Vye4"
+    ],
+    "discord": "https://sinecorecnc.discourse.group/"
+  },
+  "accessories": [
+    {
+      "name": "Automatic Tool Changer (8 positions)",
+      "price": 949,
+      "image_url": "https://cdn.shopify.com/s/files/1/0788/6766/1083/files/Studio-Template.61.jpg?v=1771899490&width=1000",
+      "description": "8-position turret that switches tools automatically; requires 90 PSI compressed air.",
+      "url": "https://sinecorecnc.com/products/automatic-tool-changer"
+    },
+    {
+      "name": "Live Tool (24k RPM)",
+      "price": 949,
+      "image_url": "https://cdn.shopify.com/s/files/1/0788/6766/1083/files/Studio-Template.75.jpg?v=1771968149&width=1000",
+      "description": "800 W liquid-cooled ER11 live tool spindle for milling and drilling on the lathe, mountable radially or axially.",
+      "url": "https://sinecorecnc.com/products/live-tool-24k-rpm"
+    },
+    {
+      "name": "Tool Touch Probe",
+      "price": 419,
+      "image_url": "https://cdn.shopify.com/s/files/1/0788/6766/1083/files/Studio-Template.64.jpg?v=1771958747&width=1000",
+      "description": "Probe that sets tool offsets automatically (0.02 mm stated accuracy).",
+      "url": "https://sinecorecnc.com/products/tool-touch-probe"
+    },
+    {
+      "name": "Flood Coolant System",
+      "price": 439,
+      "image_url": "https://cdn.shopify.com/s/files/1/0788/6766/1083/files/Studio-Template.79.jpg?v=1772553318&width=1000",
+      "description": "Integrated flood coolant system controlled via G-code.",
+      "url": "https://sinecorecnc.com/products/flood-coolant-system"
+    },
+    {
+      "name": "Heavy Duty Tailstock",
+      "price": 849,
+      "image_url": "https://cdn.shopify.com/s/files/1/0788/6766/1083/files/Studio-Template.71.jpg?v=1771966682&width=1000",
+      "description": "MT2 tailstock that supports long workpieces to reduce vibration and chatter.",
+      "url": "https://sinecorecnc.com/products/heavy-duty-tailstock"
+    },
+    {
+      "name": "Jog Pendant",
+      "price": 145,
+      "image_url": "https://cdn.shopify.com/s/files/1/0788/6766/1083/files/Studio-Template.69.jpg?v=1771963952&width=1000",
+      "description": "Handheld jog wheel pendant for positioning the machine during setup.",
+      "url": "https://sinecorecnc.com/products/jog-pendant"
+    },
+    {
+      "name": "5C Collet Chuck",
+      "price": 289,
+      "image_url": "https://cdn.shopify.com/s/files/1/0788/6766/1083/files/Studio-Template.63.jpg?v=1771954699&width=1000",
+      "description": "5C collet chuck for more precise, repeatable holding of round, square and hex stock (collets sold separately).",
+      "url": "https://sinecorecnc.com/products/5c-collet-chuck"
+    },
+    {
+      "name": "Soft Jaws (Set)",
+      "price": 49,
+      "image_url": "https://cdn.shopify.com/s/files/1/0788/6766/1083/files/Studio-Template.77.jpg?v=1771970284&width=1000",
+      "description": "Machinable soft jaws for the 3-jaw chuck to hold odd-shaped parts.",
+      "url": "https://sinecorecnc.com/products/soft-jaws-set"
+    }
+  ]
+}

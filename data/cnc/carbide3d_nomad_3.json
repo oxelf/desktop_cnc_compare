@@ -1,0 +1,92 @@
+{
+  "$schema": "../schema.json",
+  "name": "Nomad 3",
+  "company": "Carbide 3D",
+  "price": 2800,
+  "currency": "USD",
+  "image_url": "https://cdn.shopify.com/s/files/1/0683/0809/products/main2.jpg?v=1613775851",
+  "last_updated": "27.09.2026",
+  "stage": "available",
+  "notes": "Price from the official US store (no EU store; HDPE, grey HDPE or bamboo enclosure, same price). Includes MeshCAM for Nomad, Alibre Workshop licence, Carbide Create/Motion, BitZero V2 probe, 1/8 in ER-11 collet and two end mills. Weight is 70 lb per the Nomad 3 Getting Started Guide (older carbide3d.com/nomad text says 65 lb). Linear guides: round-rod linear bearings on X/Y, HG15 linear rails on Z. Integrated BitSetter tool-length sensor; BitZero V2 is a corner/XYZ probe block, not a spindle touch probe. Door interlock. Successor Nomad 4 is sold alongside (USD 5,400).",
+  "general": {
+    "machine_type": "mill",
+    "axis": 3,
+    "working_x": 203,
+    "working_y": 203,
+    "working_z": 76,
+    "enclosed": true,
+    "footprint_x": 445,
+    "footprint_y": 483,
+    "footprint_z": 432,
+    "weight": 32,
+    "accuracy": null,
+    "control_system": "grbl",
+    "assembled": true,
+    "only_base": false
+  },
+  "motion": {
+    "motor_kind": null,
+    "drive_system": "leadscrew",
+    "linear_guides": "rods",
+    "feed": null,
+    "repeatability": null
+  },
+  "spindle": {
+    "power": 130,
+    "cooling": null,
+    "system": "ER11",
+    "tools": 1,
+    "max_rpm": 24000,
+    "min_rpm": 9000,
+    "diameter": null,
+    "runout": null
+  },
+  "coolant": {
+    "mql": null,
+    "flood": null
+  },
+  "probe": {
+    "tool_length": true,
+    "z_probe": true,
+    "probe_3d": false
+  },
+  "media": {
+    "website": "https://shop.carbide3d.com/products/nomad-3",
+    "youtube": [
+      "https://www.youtube.com/watch?v=9Xs0UknTNKY",
+      "https://www.youtube.com/watch?v=cD7HhA6mdEw",
+      "https://www.youtube.com/watch?v=lC1v6fsnbrc"
+    ],
+    "discord": "https://community.carbide3d.com/"
+  },
+  "accessories": [
+    {
+      "name": "Low Profile Vise",
+      "price": 120,
+      "image_url": "https://cdn.shopify.com/s/files/1/0683/0809/products/vise-2048.jpg?v=1554222073&width=1200",
+      "description": "In-house made vise for the Nomad (2 in wide, 8 in long, 6.5 in max clamping width) with hardware to mount it to the table.",
+      "url": "https://shop.carbide3d.com/products/low-profile-vise"
+    },
+    {
+      "name": "Nomad Flip Jig",
+      "price": 120,
+      "image_url": "https://cdn.shopify.com/s/files/1/0683/0809/products/flip_jig-2048.jpg?v=1554222525&width=1200",
+      "description": "Precision fixture that mounts on the Nomad 3 table to machine both sides of a part (stock just under 3 x 5 in, up to 1.2 in thick) with alignment.",
+      "url": "https://shop.carbide3d.com/products/nomad-flip-jig"
+    },
+    {
+      "name": "Nomad Threaded Table",
+      "price": 120,
+      "image_url": "https://cdn.shopify.com/s/files/1/0683/0809/products/threaded_table2-2048.jpg?v=1554222830&width=1200",
+      "description": "Approx. 1/2 in thick table with over 50 M6 threaded holes, incl. clamps and screws, for more workholding options.",
+      "url": "https://shop.carbide3d.com/products/nomad-threaded-table"
+    },
+    {
+      "name": "Carbide 3D Jog Pendant",
+      "price": 150,
+      "image_url": "https://cdn.shopify.com/s/files/1/0683/0809/files/JogPendant.jpg?v=1759778436&width=1200",
+      "description": "USB handheld jog pendant with jog wheel, continuous-jog, feedhold/start and software E-stop buttons for Nomad/Shapeoko running Carbide Motion.",
+      "url": "https://shop.carbide3d.com/products/jog-pendant"
+    }
+  ]
+}
